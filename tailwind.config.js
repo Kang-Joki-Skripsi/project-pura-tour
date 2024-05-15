@@ -14,6 +14,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      'open-sans': ['"Open Sans"']
+    }
   },
   plugins: [],
 };
