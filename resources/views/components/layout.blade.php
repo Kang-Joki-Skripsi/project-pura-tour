@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="h-screen">
     <!-- Navbar -->
     <nav class="bg-red-700 p-4 sticky top-0">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
                 <a href="/" class="text-white text-xl font-bold">Logo</a>
@@ -22,7 +22,7 @@
             <div class="hidden md:flex md:items-center md:space-x-1">
                 <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Sejarah Pura</a>
                 <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Galery</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">3D Explore</a>
+                <a href="/3d_explore" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">3D Explore</a>
                 <a href="/video" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Video</a>
                 <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Virtual Tour 360</a>
             </div>
@@ -43,12 +43,12 @@
     <div id="mobileMenu" class="hidden md:hidden bg-red-700 p-2">
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
-        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
-        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
+        <a href="/3d_explore" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
+        <a href="/video" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
     </div> 
 
-    <div class="container">
+    <div class="content p-4 sm:py-8">
       @yield('content')
     </div>
 
