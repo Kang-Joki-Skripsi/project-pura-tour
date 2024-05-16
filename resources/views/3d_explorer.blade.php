@@ -1,12 +1,12 @@
 @extends('components.layout')
 
 @section('content')
-    <div class="container md:h-screen">
-      <div class="flex flex-col lg:flex-row lg:space-x-3 lg:h-[85%]">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row lg:space-x-3">
         <!-- Video player -->
-        <div class="w-full lg:w-2/3 h-full">
+        <div class="w-full lg:w-2/3">
           <iframe
-            class="w-full h-56 sm:h-96 lg:h-full"
+            class="w-full h-56 sm:h-96 lg:h-[500px]"
             id="frame3D"
             title="Ferrari f40"
             frameborder="0"
@@ -29,24 +29,14 @@
           <ul>
             <!-- Video list items -->
             <li class="mb-3">
-              <a href="#" class="flex items-start item-3d-explore">
-                <img
-                  src="https://media.sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/fallbacks/921f0d38be7d43d0bbe8e370429935bd/dc74c67af82542fcabcca0f4a1ef0fa9.jpeg"
-                  alt="Video Thumbnail"
-                  class="w-40 h-20 object-cover mr-2 rounded-lg"
-                  data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed"
-                />
+              <a href="#" class="flex items-start item-3d-explore" data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed">
+                <div class="w-36 h-20 mr-2 rounded-lg bg-img1 bg-left bg-cover"></div>
                 <span class="truncate font-bold">Video Title 1</span>
               </a>
             </li>
             <li class="mb-3">
-              <a href="#" class="flex items-start item-3d-explore">
-                <img
-                  src="https://media.sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/fallbacks/0dada7d4eed04d8e93aa750fb6c54c8f/1e3f6aee94b247a1976409f5b38b9e02.jpeg"
-                  alt="Video Thumbnail"
-                  class="w-40 h-20 object-cover mr-2 rounded-lg"
-                  data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed"
-                />
+              <a href="#" class="flex items-start item-3d-explore" data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed">
+                <div class="w-36 h-20 mr-2 rounded-lg bg-img2 bg-left bg-cover"></div>
                 <span class="truncate font-bold">Video Title 1</span>
               </a>
             </li>
@@ -58,12 +48,13 @@
 
     <script>
 
-      const images = document.querySelectorAll('.item-3d-explore img');
+      const images = document.querySelectorAll('.item-3d-explore');
 
       // Tambahkan event listener ke setiap elemen <img>
-      images.forEach((img) => {
-        img.addEventListener('click', () => {
-          const src = img.getAttribute('data-url');
+      images.forEach((a) => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          const src = a.getAttribute('data-url');
           const iframe = document.querySelector('#frame3D');
           iframe.setAttribute('src', src);
         });
