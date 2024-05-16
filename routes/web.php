@@ -23,3 +23,6 @@ Route::get('/video', function () {
 Route::get('/3d_explore', function () {
     return view('3d_explorer');
 });
+Route::get('/sejarah', function () {
+    return view('sejarah');
+});
