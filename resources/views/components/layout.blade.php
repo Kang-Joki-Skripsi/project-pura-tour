@@ -21,7 +21,7 @@
             <!-- Navbar Links -->
             <div class="hidden md:flex md:items-center md:space-x-1">
                 <a href="/sejarah" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Sejarah Pura</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Galery</a>
+                <a href="galery" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Galery</a>
                 <a href="/3d_explore" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">3D Explore</a>
                 <a href="/video" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Video</a>
                 <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Virtual Tour 360</a>
@@ -42,7 +42,7 @@
     <!-- Mobile Menu (Hidden by Default) -->
     <div id="mobileMenu" class="hidden md:hidden bg-red-700 p-2">
         <a href="/sejarah" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
-        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
+        <a href="/galery" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
         <a href="/3d_explore" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
         <a href="/video" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>

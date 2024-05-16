@@ -26,3 +26,6 @@ Route::get('/3d_explore', function () {
 Route::get('/sejarah', function () {
     return view('sejarah');
 });
+Route::get('/galery', function () {
+    return view('galery');
+});
