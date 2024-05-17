@@ -29,11 +29,13 @@
 
 <body class="h-screen">
     <!-- Navbar -->
-    <nav class="bg-red-700 p-4 sticky top-0">
+    <nav class="bg-red-800 p-4 sticky top-0">
         <div class="container flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
-                <a href="/" class="text-white text-xl">Sibang <span class="bg-white text-black font-bold px-4 rounded-tl-3xl rounded-br-3xl">Gede</span></a>
+                <a href="/" class="text-white text-xl">
+                    <img src="{{asset('img/logo-brand.png')}}" alt="Logo" class="w-[200px] xl:w-[250px]">
+                </a>
             </div>
             <!-- Navbar Links -->
             <div class="hidden md:flex md:items-center md:space-x-1">
