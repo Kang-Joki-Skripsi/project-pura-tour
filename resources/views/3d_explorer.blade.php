@@ -25,23 +25,45 @@
         </div>
 
         <!-- Playlist -->
-        <div class="md:w-1/3 lg:pl-4 mt-5 lg:mt-0">
-          <ul>
-            <!-- Video list items -->
+        <div class="w-full lg:w-1/3 lg:pl-4 mt-5 lg:mt-0">
+          <div class="flex flex-wrap justify-normal">
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img1 bg-left bg-cover cursor-pointer item-3d-explore mb-3"
+              data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed"
+              ></div>
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img2 bg-left bg-cover cursor-pointer item-3d-explore"
+              data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed"
+              ></div>
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img1 bg-left bg-cover cursor-pointer item-3d-explore mb-3"
+              data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed"
+              ></div>
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img2 bg-left bg-cover cursor-pointer item-3d-explore"
+              data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed"
+              ></div>
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img1 bg-left bg-cover cursor-pointer item-3d-explore mb-3"
+              data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed"
+              ></div>
+            <div 
+              class="w-36 h-20 mr-3 rounded-lg bg-img2 bg-left bg-cover cursor-pointer item-3d-explore"
+              data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed"
+              ></div>
+          </div>
+          <!-- <ul>
             <li class="mb-3">
               <a href="#" class="flex items-start item-3d-explore" data-url="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed">
                 <div class="w-36 h-20 mr-2 rounded-lg bg-img1 bg-left bg-cover"></div>
-                <span class="truncate font-bold">Video Title 1</span>
               </a>
             </li>
             <li class="mb-3">
               <a href="#" class="flex items-start item-3d-explore" data-url="https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed">
                 <div class="w-36 h-20 mr-2 rounded-lg bg-img2 bg-left bg-cover"></div>
-                <span class="truncate font-bold">Video Title 1</span>
               </a>
             </li>
-            <!-- Add more video list items as needed -->
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -49,13 +71,12 @@
     <script>
 
       const images = document.querySelectorAll('.item-3d-explore');
+      const iframe = document.querySelector('#frame3D');
 
       // Tambahkan event listener ke setiap elemen <img>
-      images.forEach((a) => {
-        a.addEventListener('click', (e) => {
-          e.preventDefault();
-          const src = a.getAttribute('data-url');
-          const iframe = document.querySelector('#frame3D');
+      images.forEach((el) => {
+        el.addEventListener('click', () => {
+          const src = el.getAttribute('data-url');
           iframe.setAttribute('src', src);
         });
       });

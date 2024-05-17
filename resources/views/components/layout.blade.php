@@ -8,6 +8,23 @@
     <!-- Include the Tailwind CSS CDN -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Untuk browser WebKit (Chrome, Safari) */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #B91C1C; /* Warna thumb scrollbar */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Warna track scrollbar */
+            scrorl
+        }
+
+        scrollbar-color: #B91C1C; /* Warna thumb dan track scrollbar */
+        scrollbar-width: thin; /* Lebar scrollbar */
+    </style>
 </head>
 
 <body class="h-screen">
