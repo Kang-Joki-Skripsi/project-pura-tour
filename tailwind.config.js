@@ -10,7 +10,21 @@ module.exports = {
       "2xl": '1440px',
       "3xl": '1600px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#c86d41",
+        secondary: "#656d71",
+      },
+      animation: {
+          popupAnimation: "popupAnimation 0.3s ease"
+      },
+      keyframes: {
+          popupAnimation: {
+              '0%': { transform: 'scale(0.5)', opacity: 0},
+              '100%': { transform: 'scale(1)', opacity: 1}
+          }
+      }
+    },
     container: {
       center: true,
     },
