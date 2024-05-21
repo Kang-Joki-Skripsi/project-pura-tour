@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Tour Pura Lingsar</title>
     <!-- Include the Tailwind CSS CDN -->
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body class="bg-slate-50 h-full">
+  <body class="bg-slate-50 h-full">
     <!-- Navbar -->
-    <nav class="bg-primary px-4 sm:px-6 py-4 sticky top-0">
-        <div class="3xl:container flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
-            </div>
-            <!-- Navbar Links -->
-            <div class="hidden md:flex md:items-center md:space-x-1">
-                <a href="beranda.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
-                <a href="video.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
-            </div>
-            <!-- Mobile Menu Button (Hamburger Icon) -->
-            <div id="mobileMenuBTN" class="md:hidden">
-                <button class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+    <nav class="bg-primary px-4 sm:px-10 py-4 sticky top-0">
+      <div class="3xl:container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
         </div>
-    </nav>
-
-    <!-- Mobile Menu (Hidden by Default) -->
-    <div id="mobileMenu" class="hidden md:hidden bg-primary px-4 sm:px-6 py-4">
-        <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <!-- Navbar Links -->
+        <div class="hidden lg:flex md:items-center md:space-x-1">
+          <a href="beranda.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+          <a href="3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        </div>
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <div id="mobileMenuBTN" class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
+        <a href="beranda.html" class="block text-white active py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
         <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
-        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
         <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
-    </div>
-    <div class="3xl:container h-full">
-        <div class="py-5 px-4 sm:px-6 md:py-14 flex items-center h-full">
-            <div class="w-full">
-                <h1 class="text-2xl md:text-3xl lg:text-6xl font-bold">Pura Lingsar</h1>
-                <a href="#" class="bg-white text-black border border-slate-300 shadow-lg hover:shadow-xl hover:border-slate-400 transition-all py-1 px-4 rounded-lg mt-5 inline-block">Virtual Tour 360 &deg;</a>
-            </div>
-        </div>
+      </div>
+    </nav>
 
-        <div class="py-5 px-4 sm:px-6 flex items-center border">
-            <div class="w-full md:w-1/2 border-dashed border-2 border-black p-4 bg-gray-300">
-                <h1 class="text-center font-bold text-2xl mb-5">Sejarah Lingsar Pura</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit aspernatur! Eos animi necessitatibus aperiam perspiciatis numquam inventore repellendus amet praesentium, est nam natus veritatis ducimus consectetur, in labore enim ipsum iste quisquam vitae! Tenetur, aliquam, quos illo et cum eveniet quidem repellendus ipsa unde quas dolor consequuntur magni. Veniam, est repellat veritatis explicabo praesentium deserunt quos labore doloribus assumenda tenetur nemo consequuntur nulla magni iste debitis obcaecati consequatur deleniti accusamus! Dignissimos molestiae ipsum libero! Fuga animi nam accusantium omnis a nihil, vitae repellat, ex accusamus voluptas assumenda sequi rem dolorum in. Ad placeat facere corrupti similique ipsam ducimus voluptas?</p>
-            </div>
+    <div class="3xl:container h-full">
+      <div class="py-5 px-4 sm:px-10 md:py-14 flex items-center h-full bg-hero bg-cover bg-center">
+        <div class="w-full text-center sm:text-left">
+          <h1 class="text-6xl font-bold">Pura Lingsar</h1>
+          <a href="#" class="bg-white text-black border border-slate-300 shadow-lg hover:shadow-xl hover:border-slate-400 transition-all py-1 px-4 rounded-lg mt-5 inline-block">Virtual Tour 360 &deg;</a>
         </div>
+      </div>
+
+      <div class="py-5 md:py-16 px-4 sm:px-10 flex items-center">
+        <div class="w-full lg:w-1/2 border-dashed border-2 border-black p-4 bg-gray-300">
+          <h1 class="text-center font-bold text-2xl mb-5">Sejarah Lingsar Pura</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit aspernatur! Eos animi necessitatibus aperiam perspiciatis numquam inventore repellendus amet praesentium, est nam natus veritatis ducimus
+            consectetur, in labore enim ipsum iste quisquam vitae! Tenetur, aliquam, quos illo et cum eveniet quidem repellendus ipsa unde quas dolor consequuntur magni. Veniam, est repellat veritatis explicabo praesentium deserunt quos
+            labore doloribus assumenda tenetur nemo consequuntur nulla magni iste debitis obcaecati consequatur deleniti accusamus! Dignissimos molestiae ipsum libero! Fuga animi nam accusantium omnis a nihil, vitae repellat, ex accusamus
+            voluptas assumenda sequi rem dolorum in. Ad placeat facere corrupti similique ipsam ducimus voluptas?
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-primary w-full text-white">
+        <div class="py-5 md:py-16 px-4 sm:px-10 sm:py-8">
+          <h1 class="text-center font-bold text-2xl">Pembagian Area Pura</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quia.</p>
+          <div class="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-2 lg:gap-5 mt-6">
+            <div class="w-full bg-white rounded-md overflow-hidden">
+              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <p class="p-3 text-sm sm:text-[16px] text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illum aliquid numquam similique. Qui laborum tempora dolore adipisci accusantium corrupti.</p>
+            </div>
+            <div class="w-full bg-white rounded-md overflow-hidden">
+              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <p class="p-3 text-sm sm:text-[16px] text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illum aliquid numquam similique. Qui laborum tempora dolore adipisci accusantium corrupti.</p>
+            </div>
+            <div class="w-full bg-white rounded-md overflow-hidden">
+              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <p class="p-3 text-sm sm:text-[16px] text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illum aliquid numquam similique. Qui laborum tempora dolore adipisci accusantium corrupti.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 md:py-16 md:py-10 px-4 sm:px-10">
+        <div class="flex justify-between flex-wrap">
+          <div class="w-full md:w-1/2 sm:px-4">
+            <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold">Pura Lingsar</h1>
+            <p class="text-justify my-4 text-sm lg:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sequi eum et sit tenetur minus ea, reiciendis consequuntur eos quasi placeat, nulla non a? Ut voluptatibus, provident incidunt libero asp
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 sm:px-4">
+            <img class="object-cover w-full max-h-[350px]" src="https://budayabali.com/uploads/images/202311/image_430x256_6554ac13baa77.jpg" alt="" />
+          </div>
+        </div>
+        <div class="flex justify-between flex-wrap mt-5">
+          <div class="w-full md:w-1/2 sm:px-4">
+            <video src="./assets/vid.mp4" class="w-full md:h-[200px] lg:h-[350px]" controls></video>
+          </div>
+          <div class="w-full md:w-1/2 sm:px-4">
+            <iframe
+              class="w-full h-[200px] lg:h-[350px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2093350435343!2d116.1762993782759!3d-8.57586069358303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc789bd140a9b%3A0x208f486afe2cda7a!2sPura%20Lingsar!5e0!3m2!1sid!2sid!4v1716300096305!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <footer class="py-8 border border-top-black text-center">
@@ -78,13 +135,12 @@
     </footer> -->
     <!-- Custom JavaScript to toggle mobile menu -->
     <script>
-        const menuBtn = document.querySelector('#mobileMenuBTN');
-        const mobileMenu = document.querySelector('#mobileMenu');
+      const menuBtn = document.querySelector('#mobileMenuBTN');
+      const mobileMenu = document.querySelector('#mobileMenu');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
     </script>
-</body>
-
+  </body>
 </html>
