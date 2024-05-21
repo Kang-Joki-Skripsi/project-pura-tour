@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Tour Pura Lingsar</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-slate-50 h-full">
+    <!-- Navbar -->
+    <nav class="bg-primary px-4 sm:px-10 py-4 sticky top-0">
+      <div class="3xl:container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="hidden lg:flex md:items-center md:space-x-1">
+          <a href="beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+          <a href="3d_explorer.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+          <a href="#" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        </div>
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <div id="mobileMenuBTN" class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4 top-0">
+        <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="3d_explorer.html" class="block active text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+      </div>
+    </nav>
+
+    <div class="3xl:container h-full">
+      <div class="py-5 px-4 sm:px-10 h-screen">
+        <div class="flex flex-col lg:flex-row lg:h-[500px]">
+          <!-- Video player -->
+          <div class="w-full lg:w-2/3 h-full px-4">
+            <iframe
+              class="w-full h-56 sm:h-96 lg:h-full"
+              id="frame3D"
+              title="Ferrari f40"
+              frameborder="0"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src="https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed"
+            >
+            </iframe>
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi necessitatibus ducimus ea temporibus exercitationem tenetur doloribus id sapiente dolor.</p>
+          </div>
+          <!-- Playlist -->
+          <div class="md:w-1/3 lg:pl-4 mt-5 lg:mt-0 px-4">
+            <ul id="playlist"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="py-8 border border-top-black text-center">
+        <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
+        </div>
+        <div id="footer-item" class="space-x-3 my-3">
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Beranda</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Kontak</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Blog</a>
+        </div>
+        <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
+    </footer> -->
+    <!-- Custom JavaScript to toggle mobile menu -->
+    <script>
+      const menuBtn = document.querySelector('#mobileMenuBTN');
+      const mobileMenu = document.querySelector('#mobileMenu');
+      const tempItemPlaylist = document.querySelector("#playlist")
+      const iframe = document.querySelector('#frame3D');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      const data3Dexplorer = [
+        {
+            src: "https://sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/embed",
+            thumbnail: "https://media.sketchfab.com/models/52a66c41cfcd4f999fb1b1c49bf24d70/fallbacks/0dada7d4eed04d8e93aa750fb6c54c8f/1e3f6aee94b247a1976409f5b38b9e02.jpeg",
+        },
+        {
+            src: "https://sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/embed",
+            thumbnail: "https://media.sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/fallbacks/921f0d38be7d43d0bbe8e370429935bd/dc74c67af82542fcabcca0f4a1ef0fa9.jpeg",
+        },
+      ];
+
+      function renderPlaylistItem(data) {
+        return (
+            `
+              <li class="mb-3">
+                <a href="#" class="flex items-start item-3d-explore">
+                  <div
+                    class="bg-[url('${data.thumbnail}')] w-40 h-24 object-cover mr-2 rounded-lg bg-cover bg-left img"
+                    alt="Video Thumbnail"
+                    data-url="${data.src}"
+                  ></div>
+                  <span class="truncate font-bold">Video Title 1</span>
+                </a>
+              </li>
+            `
+        );
+      }
+
+      function initialize() {
+        const itemPlaylist = document.querySelectorAll('.item-3d-explore .img');
+        itemPlaylist.forEach((img) => {
+        img.addEventListener('click', () => {
+          const src = img.getAttribute('data-url');
+          iframe.setAttribute('src', src);
+        });
+      });
+      }
+
+      window.addEventListener('load', () => {
+        tempItemPlaylist.innerHTML = ''
+        iframe.setAttribute('src', data3Dexplorer[0].src);
+        data3Dexplorer.forEach(data => {
+            tempItemPlaylist.innerHTML += renderPlaylistItem(data);
+        })
+
+        initialize();
+      })      
+    </script>
+  </body>
+</html>
