@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['*.html'],
+  content: ['*.html', './aset_warisan/*.html'],
   theme: {
     screens: {
       sm: '640px',
@@ -20,11 +20,16 @@ module.exports = {
       },
       animation: {
         popupAnimation: 'popupAnimation 0.3s ease',
+        scrollAnitmation: 'scrollAnitmation 0.3s ease',
       },
       keyframes: {
         popupAnimation: {
           '0%': { transform: 'scale(0.5)', opacity: 0 },
           '100%': { transform: 'scale(1)', opacity: 1 },
+        },
+        scrollAnitmation: {
+          '0%': {transform: "translateY(-100%)"},
+          '100%': {transform: "translateY(0)"},
         },
       },
     },
