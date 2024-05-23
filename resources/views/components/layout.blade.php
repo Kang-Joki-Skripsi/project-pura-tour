@@ -57,16 +57,15 @@
                 </button>
             </div>
         </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobileMenu" class="hidden md:hidden pt-4">
+            <a href="/sejarah" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
+            <a href="/galery" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
+            <a href="/3d_explore" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
+            <a href="/video" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
+            <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
+        </div> 
     </nav>
-
-    <!-- Mobile Menu (Hidden by Default) -->
-    <div id="mobileMenu" class="hidden md:hidden bg-red-700 p-2">
-        <a href="/sejarah" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
-        <a href="/galery" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
-        <a href="/3d_explore" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
-        <a href="/video" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
-        <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
-    </div> 
 
     <div class="content p-4 sm:py-8">
       @yield('content')

@@ -20,7 +20,7 @@
         <ul id="cards" class="py-8 grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-y-12 xl:gap-y-4"></ul>
     </div>
 
-    <div id="popup-container" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-start sm:items-center justify-center hidden">
+    <div id="popup-container" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-start sm:items-center justify-center hidden z-50">
       <div class="relative bg-white px-4 py-16 rounded shadow-md overflow-auto animate-popupAnimation">
         <button id="close-button" class="absolute top-2 left-2 md:top-5 md:left-5 w-6 h-6 bg-white rounded-full md:w-8 md:h-8 mb-5 text-xl">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-arrow-left-circle text-slate-600 hover:text-red-600 active:text-slate-600" viewBox="0 0 16 16">
