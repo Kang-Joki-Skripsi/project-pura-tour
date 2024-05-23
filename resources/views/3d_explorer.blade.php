@@ -28,7 +28,7 @@
 
       function renderItemVideoTemplate(src) {
         return (`
-            <video class="w-36 h-20 mr-3 rounded-lg cursor-pointer item-3d-explore mb-3 shadow-lg border border-slate-200" data-url="${src}">
+            <video class="w-36 h-20 mr-3 rounded-lg cursor-pointer item-3d-explore mb-3 shadow hover:shadow-lg border border-slate-200 bg-white" data-url="${src}">
                 <source src="${src}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

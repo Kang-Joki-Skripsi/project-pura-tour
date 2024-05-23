@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pura Tour</title>
+    <title>SIBANG GEDE | {{$title}}</title>
     <!-- Include the Tailwind CSS CDN -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,9 +28,9 @@
     </style>
 </head>
 
-<body class="h-screen">
+<body class="bg-slate-200">
     <!-- Navbar -->
-    <nav class="bg-red-800 p-4 sticky top-0">
+    <nav id="navbar" class="bg-red-800 p-4 top-0">
         <div class="container flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
@@ -39,15 +39,15 @@
                 </a>
             </div>
             <!-- Navbar Links -->
-            <div class="hidden md:flex md:items-center md:space-x-1">
-                <a href="/sejarah" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Sejarah Pura</a>
-                <a href="galery" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Galery</a>
-                <a href="/3d_explore" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">3D Explore</a>
-                <a href="/video" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Video</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full">Virtual Tour 360</a>
+            <div class="hidden lg:flex md:items-center md:space-x-1">
+                <a href="sejarah" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'sejarah' ? 'active' : ''}}">Sejarah Pura</a>
+                <a href="galery" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'galery' ? 'active' : ''}}">Galery</a>
+                <a href="3d_explore" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == '3d' ? 'active' : ''}}">3D Explore</a>
+                <a href="video" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'video' ? 'active' : ''}}">Video</a>
+                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'virtual' ? 'active' : ''}}">Virtual Tour 360</a>
             </div>
             <!-- Mobile Menu Button (Hamburger Icon) -->
-            <div id="mobileMenuBTN" class="md:hidden">
+            <div id="mobileMenuBTN" class="lg:hidden">
                 <button class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -93,6 +93,16 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        window.onscroll = function () {
+            const navbar = document.querySelector("#navbar");
+            console.log(window.pageYOffset)
+            if (window.pageYOffset > 0) {
+                navbar.classList.add('scrollAnimate')
+            }else {
+                navbar.classList.remove("scrollAnimate")
+            }
+        }
     </script>
 </body>
 </html>

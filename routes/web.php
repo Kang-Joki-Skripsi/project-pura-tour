@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', ["title" => "Beranda"]);
 });
 
 Route::get('/video', function () {
-    return view('video');
+    return view('video', ["title" => "Video", "active" => "video"]);
 });
 Route::get('/3d_explore', function () {
-    return view('3d_explorer');
+    return view('3d_explorer', ["title" => "3D Explorer", "active" => "3d"]);
 });
 Route::get('/sejarah', function () {
-    return view('sejarah');
+    return view('sejarah', ["title" => "Sejarah", "active" => "sejarah"]);
 });
 Route::get('/galery', function () {
-    return view('galery');
+    return view('galery', ["title" => "Galery", "active" => "galery"]);
 });

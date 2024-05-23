@@ -16,12 +16,17 @@ module.exports = {
                 'img2': "url('https://media.sketchfab.com/models/1bb69bbe51fc4e11ad10ea80c32ca7f6/fallbacks/921f0d38be7d43d0bbe8e370429935bd/dc74c67af82542fcabcca0f4a1ef0fa9.jpeg')",
             },
             animation: {
-                popupAnimation: "popupAnimation 0.3s ease"
+                popupAnimation: "popupAnimation 0.3s ease",
+                scrollAnimation: "scrollAnimation 0.4s ease",
             },
             keyframes: {
                 popupAnimation: {
                     '0%': { transform: 'scale(0.5)', opacity: 0},
                     '100%': { transform: 'scale(1)', opacity: 1}
+                },
+                scrollAnimation: {
+                    "0%": {transform: "translateY(-100%)"},
+                    "100%": {transform: "translateY(0)"},
                 }
             }
         },
