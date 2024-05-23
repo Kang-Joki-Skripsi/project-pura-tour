@@ -95,7 +95,6 @@
 
         window.onscroll = function () {
             const navbar = document.querySelector("#navbar");
-            console.log(window.pageYOffset)
             if (window.pageYOffset > 0) {
                 navbar.classList.add('scrollAnimate')
             }else {
