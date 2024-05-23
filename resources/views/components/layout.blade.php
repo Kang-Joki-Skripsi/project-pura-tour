@@ -34,17 +34,17 @@
         <div class="container flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
-                <a href="/" class="text-white text-xl">
+                <a href="{{route('beranda')}}" class="text-white text-xl">
                     <img src="{{asset('img/logo-brand.png')}}" alt="Logo" class="w-[200px] xl:w-[250px]">
                 </a>
             </div>
             <!-- Navbar Links -->
             <div class="hidden lg:flex md:items-center md:space-x-1">
-                <a href="sejarah" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'sejarah' ? 'active' : ''}}">Sejarah Pura</a>
-                <a href="galery" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'galery' ? 'active' : ''}}">Galery</a>
-                <a href="3d_explore" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == '3d' ? 'active' : ''}}">3D Explore</a>
-                <a href="video" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'video' ? 'active' : ''}}">Video</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{$active == 'virtual' ? 'active' : ''}}">Virtual Tour 360</a>
+                <a href="{{route('sejarah')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'sejarah' ? 'active' : ''}}">Sejarah Pura</a>
+                <a href="{{route('galery')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'galery' ? 'active' : ''}}">Galery</a>
+                <a href="{{route('3dexplorer')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == '3d' ? 'active' : ''}}">3D Explore</a>
+                <a href="{{route('video')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'video' ? 'active' : ''}}">Video</a>
+                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'virtual' ? 'active' : ''}}">Virtual Tour 360</a>
             </div>
             <!-- Mobile Menu Button (Hamburger Icon) -->
             <div id="mobileMenuBTN" class="lg:hidden">
@@ -59,10 +59,10 @@
         </div>
         <!-- Mobile Menu (Hidden by Default) -->
         <div id="mobileMenu" class="hidden md:hidden pt-4">
-            <a href="/sejarah" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
-            <a href="/galery" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
-            <a href="/3d_explore" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
-            <a href="/video" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
+            <a href="{{route('sejarah')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Sejarah Pura</a>
+            <a href="{{route('galery')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
+            <a href="{{route('3dexplorer')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
+            <a href="{{route('video')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
             <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
         </div> 
     </nav>
@@ -78,7 +78,7 @@
             <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
         </div>
         <div id="footer-item" class="space-x-3 my-3">
-            <a href="beranda.html" class="text-blue-600 hover:cursor-pointer">Beranda</a>
+            <a href="{{route('beranda')}}" class="text-blue-600 hover:cursor-pointer">Beranda</a>
             <a href="#" class="text-blue-600 hover:cursor-pointer">Kontak</a>
             <a href="#" class="text-blue-600 hover:cursor-pointer">Blog</a>
         </div>

@@ -13,19 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('index', ["title" => "Beranda"]);
-});
+})->name('beranda');
+
+Route::get('/sejarah', function () {
+    return view('sejarah', ["title" => "Sejarah", "active" => "sejarah"]);
+})->name('sejarah');
+
+Route::get('/galery', function () {
+    return view('galery', ["title" => "Galery", "active" => "galery"]);
+})->name('galery');
+
+Route::get('/3d_explore', function () {
+    return view('3d_explorer', ["title" => "3D Explorer", "active" => "3d"]);
+})->name('3dexplorer');
 
 Route::get('/video', function () {
     return view('video', ["title" => "Video", "active" => "video"]);
-});
-Route::get('/3d_explore', function () {
-    return view('3d_explorer', ["title" => "3D Explorer", "active" => "3d"]);
-});
-Route::get('/sejarah', function () {
-    return view('sejarah', ["title" => "Sejarah", "active" => "sejarah"]);
-});
-Route::get('/galery', function () {
-    return view('galery', ["title" => "Galery", "active" => "galery"]);
-});
+})->name('video');
+
