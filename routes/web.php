@@ -34,3 +34,7 @@ Route::get('/video', function () {
     return view('video', ["title" => "Video", "active" => "video"]);
 })->name('video');
 
+Route::get('/virtual_tour', function () {
+    return view('vtour',  ["title" => "Virtual Tour", "active" => "vtour"]);
+})->name('vtour');
+

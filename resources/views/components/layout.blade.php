@@ -44,7 +44,7 @@
                 <a href="{{route('galery')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'galery' ? 'active' : ''}}">Galery</a>
                 <a href="{{route('3dexplorer')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == '3d' ? 'active' : ''}}">3D Explore</a>
                 <a href="{{route('video')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'video' ? 'active' : ''}}">Video</a>
-                <a href="#" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'virtual' ? 'active' : ''}}">Virtual Tour 360</a>
+                <a href="{{route('vtour')}}" class="text-white hover:bg-white hover:text-black py-2 px-4 rounded-full {{@$active == 'vtour' ? 'active' : ''}}">Virtual Tour 360</a>
             </div>
             <!-- Mobile Menu Button (Hamburger Icon) -->
             <div id="mobileMenuBTN" class="lg:hidden">
@@ -63,7 +63,7 @@
             <a href="{{route('galery')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Galery</a>
             <a href="{{route('3dexplorer')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explore</a>
             <a href="{{route('video')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Video</a>
-            <a href="#" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
+            <a href="{{route('vtour')}}" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360</a>
         </div> 
     </nav>
 
