@@ -57,13 +57,19 @@
           <div class="w-full sm:w-3/4 md:w-1/2 md:px-6">
             <a href="aset_warisan/intangible.html" target="_blank">
               <img src="./assets/img/hero.jpg" alt="" class="w-full max-h-[350px]" />
-              <h3 class="text-center py-3 font-semibold text-white bg-primary">Intangible (Warisan Budaya Tak Berwujud)</h3>
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center font-bold">Intangible (Warisan Budaya Tak Berwujud)</h3>
+                <p class="text-justify mt-3">Aset intangible adalah warisan budaya dalam bentuk non-fisik seperti tradisi, adat istiadat dan cerita rakyat</p>
+              </div>
             </a>
           </div>
           <div class="w-full sm:w-3/4 md:w-1/2 md:px-6">
             <a href="aset_warisan/tangible.html" target="_blank">
               <img src="./assets/img/hero.jpg" alt="" class="w-full max-h-[350px]" />
-              <h3 class="text-center py-3 font-semibold text-white bg-primary">Tangible (Warisan Budaya Berwujud)</h3>
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center font-bold text-white">Tangible (Warisan Budaya Berwujud)</h3>
+                <p class="text-justify mt-3">Aset tangible adalah adalah warisan budaya dalam bentuk fisik seperti struktur bangunan, monumen, patung dan artefak.</p>
+              </div>
             </a>
           </div>
         </div>
@@ -93,7 +99,7 @@
       });
       window.onscroll = function () {
         var navbarContent = document.querySelector('#navbar');
-        if (window.pageYOffset > 10) {
+        if (window.pageYOffset > 25) {
           navbarContent.classList.add('scrollAnimate');
         } else {
           navbarContent.classList.remove('scrollAnimate');
