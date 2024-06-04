@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Tour Pura Lingsar</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-slate-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 top-0">
+      <div class="3xl:container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="hidden lg:flex md:items-center md:space-x-1">
+          <a href="beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+          <a href="aset.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+          <a href="virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+          <a href="3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+          <a href="informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        </div>
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <div id="mobileMenuBTN" class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
+        <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+      </div>
+    </nav>
+
+    <div class="3xl:container h-full">
+      <div class="py-5 px-4 sm:px-10 md:py-14">
+        <h1 class="text-white text-center py-4 sm:py-6 bg-primary font-bold text-xl md:text-3xl mb-5">Aset Warisan Budaya</h1>
+        <div class="flex items-center justify-center flex-col md:flex-row  space-y-4 md:space-y-0">
+          <div class="w-full sm:w-3/4 md:w-1/2 md:px-6">
+            <a href="aset_warisan/intangible.html" target="_blank">
+              <img src="./assets/img/hero.jpg" alt="" class="w-full max-h-[350px]" />
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center font-bold">Intangible (Warisan Budaya Tak Berwujud)</h3>
+                <p class="text-justify mt-3">Aset intangible adalah warisan budaya dalam bentuk non-fisik seperti tradisi, adat istiadat dan cerita rakyat</p>
+              </div>
+            </a>
+          </div>
+          <div class="w-full sm:w-3/4 md:w-1/2 md:px-6">
+            <a href="aset_warisan/tangible.html" target="_blank">
+              <img src="./assets/img/hero.jpg" alt="" class="w-full max-h-[350px]" />
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center font-bold text-white">Tangible (Warisan Budaya Berwujud)</h3>
+                <p class="text-justify mt-3">Aset tangible adalah adalah warisan budaya dalam bentuk fisik seperti struktur bangunan, monumen, patung dan artefak.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="py-8 border border-top-black text-center">
+        <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
+        </div>
+        <div id="footer-item" class="space-x-3 my-3">
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Beranda</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Kontak</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Blog</a>
+        </div>
+        <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
+    </footer> -->
+    <!-- Custom JavaScript to toggle mobile menu -->
+    <script>
+      const menuBtn = document.querySelector('#mobileMenuBTN');
+      const mobileMenu = document.querySelector('#mobileMenu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      window.onscroll = function () {
+        var navbarContent = document.querySelector('#navbar');
+        if (window.pageYOffset > 25) {
+          navbarContent.classList.add('scrollAnimate');
+        } else {
+          navbarContent.classList.remove('scrollAnimate');
+        }
+      };
+    </script>
+  </body>
+</html>

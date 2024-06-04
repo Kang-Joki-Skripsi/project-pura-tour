@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .active {
+    @apply bg-white text-black !important;
+  }
+  .scrollAnimate {
+    @apply fixed z-10 top-0 left-0 w-full animate-scrollAnitmation;
+  }
+
+  .zoomIn {
+    @apply md:scale-[1.4] right-0 left-0 z-10;
+  }
+
+  .zoomIn .boxImg span {
+    @apply flex !important;
+  }
+}

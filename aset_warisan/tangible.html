@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Tour Pura Lingsar</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-slate-200">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 sticky top-0">
+      <div class="3xl:container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="hidden lg:flex md:items-center md:space-x-1">
+          <a href="../beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+          <a href="../aset.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+          <a href="../virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+          <a href="../3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+          <a href=../informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        </div>
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <div id="mobileMenuBTN" class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
+        <a href="../beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <a href="../aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="../virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="../3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="../informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+      </div>
+    </nav>
+
+    <div class="3xl:container overflow-x-clip">
+      <div class="py-5 px-4 sm:px-10 md:py-14">
+        <div class="flex justify-evenly text-white items-center bg-primary py-4 md:py-6 flex-col md:flex-row">
+          <h1 class="text-2xl font-bold mb-5 md:text-3xl md:mb-0">Foto Aset</h1>
+          <div id="menuFotoAsset" class="flex space-x-1 text-sm md:text-[16px]">
+            <button data-type="semua" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">semua</button>
+            <button data-type="bale" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">Bale</button>
+            <button data-type="pelinggih" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">Pelinggih</button>
+            <button data-type="patung" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">Patung</button>
+          </div>
+        </div>
+        <div id="cardsFotoAsset" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 place-items-center mt-5 relative">
+          <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item">
+            <div class="relative boxImg">
+              <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
+                <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black">Show More</h3>
+              </span>
+              <img src="../assets/img/hero.jpg" alt="img" />
+            </div>
+            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-container" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-start sm:items-center justify-center hidden z-50">
+      <div class="relative bg-white px-4 pb-5 pt-16 rounded shadow-md animate-popupAnimation overflow-auto">
+        <button id="close-button" class="absolute top-2 left-2 md:top-5 md:left-5 w-6 h-6 bg-white rounded-full md:w-8 md:h-8 mb-5 text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-arrow-left-circle text-slate-600 hover:text-red-600 active:text-slate-600" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+          </svg>
+        </button>
+        <div id="contentPopup" class="flex max-w-[640px] md:max-h-[500px] lg:max-w-[1000px] flex-wrap justify-center items-center"></div>
+      </div>
+    </div>
+
+    <!-- <footer class="py-8 border border-top-slate-900 text-center">
+        <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
+        </div>
+        <div id="footer-item" class="space-x-3 my-3">
+            <a href="beranda.html" class="text-blue-600 hover:cursor-pointer">Beranda</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Kontak</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Blog</a>
+        </div>
+        <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
+    </footer> -->
+    <!-- Custom JavaScript to toggle mobile menu -->
+    <script>
+      const menuBtn = document.querySelector('#mobileMenuBTN');
+      const mobileMenu = document.querySelector('#mobileMenu');
+      const tempFotoAssets = document.querySelector('#cardsFotoAsset');
+      const popupContainer = document.querySelector('#popup-container');
+      const closeBtnPopup = document.querySelector('#close-button');
+      const menuFotoAssets = document.querySelectorAll('#menuFotoAsset > button');
+
+      const dataFotoAsset = [
+        {
+          id: 1,
+          type: 'bale',
+          nama: 'foto 1',
+          bangunan: 'bangunan 1',
+          stana: 'stana 1',
+          letak: 'letak 1',
+          lokasi: 'lokasi 1',
+          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 2,
+          type: 'bale',
+          nama: 'foto 2',
+          bangunan: 'bangunan 2',
+          stana: 'stana 2',
+          letak: 'letak 2',
+          lokasi: 'lokasi 2',
+          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 3,
+          type: 'bale',
+          nama: 'foto 3',
+          bangunan: 'bangunan 3',
+          stana: 'stana 3',
+          letak: 'letak 3',
+          lokasi: 'lokasi 3',
+          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 4,
+          type: 'bale',
+          nama: 'foto 4',
+          bangunan: 'bangunan 4',
+          stana: 'stana 4',
+          letak: 'letak 4',
+          lokasi: 'lokasi 4',
+          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 5,
+          type: 'pelinggih',
+          nama: 'foto 5',
+          bangunan: 'bangunan 5',
+          stana: 'stana 5',
+          letak: 'letak 5',
+          lokasi: 'lokasi 5',
+          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 6,
+          type: 'pelinggih',
+          nama: 'foto 6',
+          bangunan: 'bangunan 6',
+          stana: 'stana 6',
+          letak: 'letak 6',
+          lokasi: 'lokasi 6',
+          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 7,
+          type: 'pelinggih',
+          nama: 'foto 7',
+          bangunan: 'bangunan 7',
+          stana: 'stana 7',
+          letak: 'letak 7',
+          lokasi: 'lokasi 7',
+          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 8,
+          type: 'pelinggih',
+          nama: 'foto 8',
+          bangunan: 'bangunan 8',
+          stana: 'stana 8',
+          letak: 'letak 8',
+          lokasi: 'lokasi 8',
+          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 9,
+          type: 'patung',
+          nama: 'foto 9',
+          bangunan: 'bangunan 9',
+          stana: 'stana 9',
+          letak: 'letak 9',
+          lokasi: 'lokasi 9',
+          img: '../assets/img/hero.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 10,
+          type: 'patung',
+          nama: 'foto 10',
+          bangunan: 'bangunan 10',
+          stana: 'stana 10',
+          letak: 'letak 10',
+          lokasi: 'lokasi 10',
+          img: '../assets/img/hero.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 11,
+          type: 'patung',
+          nama: 'foto 11',
+          bangunan: 'bangunan 11',
+          stana: 'stana 11',
+          letak: 'letak 11',
+          lokasi: 'lokasi 11',
+          img: '../assets/img/hero.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+        {
+          id: 12,
+          type: 'patung',
+          nama: 'foto 12',
+          bangunan: 'bangunan 12',
+          stana: 'stana 12',
+          letak: 'letak 12',
+          lokasi: 'lokasi 12',
+          img: '../assets/img/hero.jpg',
+          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
+        },
+      ];
+
+      function loadDataAsset(data) {
+        return `
+              <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item">
+                <div class="relative boxImg">
+                  <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
+                    <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black" data-id="${data.id}">Show More</h3>
+                  </span>
+                  <img src="${data.img}" alt="img" class="w-full" />
+                </div>
+                <p class="p-4">${data.deskripsi}</p>
+              </div>
+            `;
+      }
+
+      function loadPopup(data) {
+        return `
+            <div class="w-full lg:w-1/2 p-4">
+              <img class="w-full h-full" src="${data.img}" alt="" />
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+              <h2 class="text-2xl">Informasi Bangunan</h2>
+              <table class="my-6">
+                <tr>
+                  <td class="py-1">Nama</td>
+                  <td class="pl-14 font-semibold">: ${data.nama}</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Bangunan</td>
+                  <td class="pl-14 font-semibold">: ${data.bangunan}</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Stana</td>
+                  <td class="pl-14 font-semibold">: ${data.stana}</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Letak</td>
+                  <td class="pl-14 font-semibold">: ${data.letak}</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Lokasi</td>
+                  <td class="pl-14 font-semibold">: ${data.lokasi}</td>
+                </tr>
+              </table>
+              <p class="text-justify text-sm">
+                ${data.deskripsi}
+              </p>
+            </div>
+          `;
+      }
+
+      function initialize() {
+        const fotoAssets = document.querySelectorAll('#cardsFotoAsset .item');
+        const readMore = document.querySelectorAll('.boxImg > span > h3');
+        fotoAssets.forEach((el) => {
+          el.addEventListener('click', () => {
+            fotoAssets.forEach((item) => (item != el ? item.classList.remove('zoomIn') : ''));
+            el.classList.toggle('zoomIn');
+          });
+        });
+
+        readMore.forEach((el) => {
+          const contentPopup = document.querySelector('#contentPopup');
+          el.addEventListener('click', (e) => {
+            // mencari element parent dari element yang di click berdasar id
+            // e.target.closest('#cardsFotoAssetItem')
+            const id = el.getAttribute('data-id');
+            const data = dataFotoAsset.find((e) => e.id == id);
+            contentPopup.innerHTML = loadPopup(data);
+            popupContainer.classList.add('flex');
+            popupContainer.classList.remove('hidden');
+          });
+        });
+
+        closeBtnPopup.addEventListener('click', () => {
+          popupContainer.classList.add('hidden');
+          popupContainer.classList.remove('flex');
+        });
+      }
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      window.addEventListener('load', () => {
+        tempFotoAssets.innerHTML = '';
+        dataFotoAsset.forEach((data) => {
+          tempFotoAssets.innerHTML += loadDataAsset(data);
+        });
+
+        initialize();
+      });
+
+      menuFotoAssets.forEach((el) => {
+        el.addEventListener('click', () => {
+          tempFotoAssets.innerHTML = '';
+          const type = el.getAttribute('data-type');
+          if (type != 'semua') {
+            const fotoAssets = dataFotoAsset.filter((a) => a.type == type);
+            fotoAssets.forEach((data) => {
+              tempFotoAssets.innerHTML += loadDataAsset(data);
+            });
+          } else {
+            dataFotoAsset.forEach((data) => {
+              tempFotoAssets.innerHTML += loadDataAsset(data);
+            });
+          }
+
+          initialize();
+        });
+      });
+
+      window.onscroll = function () {
+        var navbarContent = document.querySelector('#navbar');
+        if (window.pageYOffset > 25) {
+          navbarContent.classList.add('scrollAnimate');
+        } else {
+          navbarContent.classList.remove('scrollAnimate');
+        }
+      };
+    </script>
+  </body>
+</html>

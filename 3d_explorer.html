@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Tour Pura Lingsar</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-slate-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 top-0">
+      <div class="3xl:container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="hidden lg:flex md:items-center md:space-x-1">
+          <a href="beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+          <a href="aset.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+          <a href="virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+          <a href="3d_explorer.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+          <a href="informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        </div>
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <div id="mobileMenuBTN" class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
+        <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full w-">Beranda</a>
+        <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+      </div>
+    </nav>
+
+    <div class="3xl:container">
+      <div class="py-5 px-4 sm:px-10">
+        <div class="flex flex-col lg:flex-row lg:h-[500px]">
+          <!-- Video player -->
+          <div class="w-full lg:w-2/3 h-full md:px-4" id="frame3D"></div>
+          <!-- Playlist -->
+          <div class="w-[400px] lg:w-1/3 lg:pl-4 mt-5 lg:mt-0 md:px-4">
+            <ul id="playlist"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="py-8 border border-top-black text-center">
+        <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
+        </div>
+        <div id="footer-item" class="space-x-3 my-3">
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Beranda</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Kontak</a>
+            <a href="#" class="text-blue-600 hover:cursor-pointer">Blog</a>
+        </div>
+        <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
+    </footer> -->
+    <!-- Custom JavaScript to toggle mobile menu -->
+    <script>
+      const menuBtn = document.querySelector('#mobileMenuBTN');
+      const mobileMenu = document.querySelector('#mobileMenu');
+      const tempItemPlaylist = document.querySelector('#playlist');
+      const iframe = document.querySelector('#frame3D');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      const data3Dexplorer = [
+        {
+          id: 1,
+          title: 'Patung 1',
+          deskripsi: 'Patung ini berada pada bangunan petaulan (penghubung) yang terletak di komplek Kemaliq Lingsar.',
+          src: 'https://sketchfab.com/models/f22077bc92844794bdd45f0236573964/embed',
+          thumbnail: 'https://media.sketchfab.com/models/f22077bc92844794bdd45f0236573964/thumbnails/165b208d389142fe8ff82f8bbfa68332/263e35fbc79d4b11936facc8d1c91847.jpeg',
+        },
+        {
+          id: 2,
+          title: 'Patung 2',
+          deskripsi: 'Patung ini berjumlah 2 patung dengan bentk yang sama saling berpasangan, berada pada bangunan candi bentar yang terletak antara Nista Mandala dan Pratama Mandala',
+          src: 'https://sketchfab.com/models/cc37461d82844d79aa55985d4a700d3c/embed',
+          thumbnail: 'https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/1024.jpg',
+        },
+        {
+          id: 3,
+          title: 'Pelinggih Penyungsung Betara Ngengurah',
+          deskripsi: 'Bangunan Pelinggih yang terletak di komplek Pura Gaduh. sebagai tempat pemujaan/bersemayamnya Ratu Ngurah',
+          src: 'https://sketchfab.com/models/07050276b38242138bad33b912690e6f/embed',
+          thumbnail: 'https://media.sketchfab.com/models/07050276b38242138bad33b912690e6f/thumbnails/d3eb4d933e83434d96b1526fa0991b70/b5a6ac3b0f5641f683a9497fe219b4fe.jpeg',
+        },
+        {
+          id: 4,
+          title: 'Bale Bundar',
+          deskripsi: `Bale bundar ini digunakan sebagai tempat kegiatan rapat dan beristirahat bagi umat  yang bersembahyang. Bale ini terletak di areal nista mandala atau bagian taman. <br><br> note : pada bentuk asli, bangunan terlihat dengan kondisi sempurna. hasil terlihat seperti itu adalah dikarenakan keterbatasan angle pada saat pengambilan gambar atau scanning`,
+          src: 'https://sketchfab.com/models/0e9af8158bb145049f8d60aab6dce63b/embed',
+          thumbnail: 'https://media.sketchfab.com/models/0e9af8158bb145049f8d60aab6dce63b/thumbnails/bc8e0074adb346958c9de7e61290c3ae/efaa4394c256436387f5a6e0e8b28330.jpeg',
+        },
+      ];
+
+      function renderPlaylistItem(data) {
+        return `
+              <li class="mb-2 shadow-lg rounded-md overflow-hidden item-3d-explore border border-slate-200" id="${data.id}">
+                <a href="#" class="flex items-start">
+                  <div class="w-40 h-24 object-cover mr-2 bg-cover bg-left img">
+                    <img src="${data.thumbnail}" class="h-full w-full" />
+                  </div>
+                  <span class="font-bold p-3 w-[280px]">${data.title}</span>
+                </a>
+              </li>
+            `;
+      }
+
+      function loadMainVideo(data) {
+        return `
+          <iframe
+              class="w-full h-56 sm:h-96 lg:h-full"
+              frameborder="0"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src="${data.src}"
+            >
+            </iframe>
+            <h1 class="font-bold mt-5 text-2xl md:text-3xl">${data.title}</h1>
+            <p class="my-3 pb-8 text-sm md:text-[16px]">${data.deskripsi}</p>
+        `;
+      }
+
+      function initialize() {
+        const itemPlaylist = document.querySelectorAll('.item-3d-explore');
+        itemPlaylist.forEach((item) => {
+          item.addEventListener('click', () => {
+            const id = item.getAttribute('id');
+            const data = data3Dexplorer.find((e) => e.id == id);
+            iframe.innerHTML = loadMainVideo(data);
+          });
+        });
+      }
+
+      window.addEventListener('load', () => {
+        tempItemPlaylist.innerHTML = '';
+        iframe.innerHTML = loadMainVideo(data3Dexplorer[0]);
+        data3Dexplorer.forEach((data) => {
+          tempItemPlaylist.innerHTML += renderPlaylistItem(data);
+        });
+
+        initialize();
+      });
+
+      window.onscroll = function () {
+        var navbarContent = document.querySelector('#navbar');
+        if (window.pageYOffset > 65) {
+          navbarContent.classList.add('scrollAnimate');
+        } else {
+          navbarContent.classList.remove('scrollAnimate');
+        }
+      };
+    </script>
+  </body>
+</html>
