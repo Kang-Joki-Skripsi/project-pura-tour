@@ -13,6 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css">
+    <script src="./assets/vendor/aos/aos.js"></script>
   </head>
 
   <body class="bg-slate-50">
@@ -21,7 +23,12 @@
       <div class="3xl:container flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+          <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
+            <img src="./assets/img/logo.png" alt="logo" class="max-w-[60px]">
+            <span>
+              Virtual Tour Pura Lingsar
+            </span>
+          </a>
         </div>
         <!-- Navbar Links -->
         <div class="hidden lg:flex md:items-center md:space-x-1">
@@ -50,18 +57,22 @@
       </div>
     </nav>
 
-    <div class="3xl:container">
-      <div class="py-5 px-4 sm:px-10 md:py-14 flex items-center h-[600px] bg-hero bg-cover bg-center">
-        <div class="w-full text-center sm:text-left">
-          <h1 class="text-5xl sm:text-6xl font-bold">Pura Lingsar</h1>
-          <a href="#" class="bg-white text-black border border-slate-300 shadow-lg hover:shadow-xl hover:border-slate-400 transition-all py-1 px-4 rounded-lg mt-5 inline-block">Virtual Tour 360 &deg;</a>
+    
+    <div class="py-5 px-4 sm:px-10 md:py-14 flex justify-center items-center h-[600px] bg-hero bg-cover bg-center">
+      <div class="3xl:container">
+        <div data-aos="fade-up" class="w-full text-center">
+          <h1 class="text-5xl sm:text-7xl font-bold text-white">Pura Lingsar</h1>
+          <a href="#" class="bg-white text-black border border-slate-300 shadow-lg hover:shadow-xl hover:border-slate-400 transition-all py-1 px-4 rounded-lg mt-8 inline-block">
+              Virtual Tour 360 &deg;
+          </a>
         </div>
       </div>
-
+    </div>
+    <div class="3xl:container">
       <div class="py-5 md:py-16 px-4 sm:px-10 flex items-center">
-        <div class="w-full border-dashed border-2 border-black p-4 bg-gray-300">
+        <div data-aos="fade-up" class="w-full border-dashed border-2 border-black p-4 bg-gray-300 relative">
           <h1 class="text-center font-bold text-2xl mb-5">Sejarah Lingsar Pura</h1>
-          <p>
+          <p id="sejarah" class="max-h-[400px] overflow-y-hidden transition text-justify">
             Sulit dipercaya bahwa di dunia ini ada dua komunitas dengan latar belakang etnis, budaya, dan keyakinan agama yang berbeda, namun mampu hidup berdampingan dalam menjalankan ritus agama masing-masing. Perbedaan dianggap sebagai
             sesuatu yang wajar dan logis, bahkan dianggap sebagai hikmah dari Tuhan Yang Maha Esa, karena perbedaan tersebut memungkinkan mereka saling mengenal dan menghormati keyakinan satu sama lain. Di tempat tersebut, terdapat sebuah
             tempat suci yang dihormati oleh kedua komunitas sesuai dengan persepsi dan versi keyakinan agama masing-masing. Dalam beberapa hal, mereka bisa melakukan ritual tersebut bersama-sama, namun dalam hal lainnya, hanya umat yang
@@ -85,6 +96,9 @@
             <br><br>
             Perang Topat diadakan sebelum menanam padi tetapi setelah datangnya musim hujan. Maksud dari acara ini adalah untuk mengembalikan hasil tanah (berupa topat) kepada asal (Lingsar). Hasilnya tersebut akan menjadi rabuk (bubus lowong) untuk bibit padi yang akan ditanam. Yang utama menghadiri upacara tersebut adalah anggota Subak Kecamatan Lingsar dan Narmada. Perang Topat merupakan ungkapan sukacita atau terima kasih kepada Sang Pencipta. Tiap tahun sebelum Perang Topat, ada beberapa orang dari Subak ini yang naik ke Gunung Rinjani dengan membawa benda-benda yang terbuat dari emas berbentuk udang, gurami, nyale, dan kura-kura. Benda-benda ini nantinya akan dibuang ke Danau Segara Anak dengan maksud untuk memohon kemakmuran.
           </p>
+          <div class="showmore text-center">
+            <button id="showmore" class="px-4 py-2 bg-white rounded-full shadow-xl">Show More</button>
+          </div>
         </div>
       </div>
 
@@ -93,20 +107,20 @@
           <h1 class="text-center font-bold text-2xl">Pembagian Area Pura</h1>
           <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quia.</p>
           <div class="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-2 lg:gap-5 mt-6">
-            <div class="w-full bg-white rounded-md overflow-hidden">
+            <div data-aos="fade-right" class="w-full bg-white rounded-md overflow-hidden">
               <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
               <h2 class="text-black font-bold p-3">Nista Mandala </h2>
               <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Areal pura yang paling di bawah atau paling di luar, Areal ini adalah mencakup bagian taman yang luas di area Pura Lingsar.</p>
             </div>
-            <div class="w-full bg-white rounded-md overflow-hidden">
+            <div data-aos="fade-up" class="w-full bg-white rounded-md overflow-hidden">
               <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
               <h2 class="text-black font-bold p-3">Madya/Pratama Mandala</h2>
               <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Madya Mandala atau dalam pura lingsar disebut pratama mandala adalah areal tengah dari pura lingsar. Areal ini biasanya digunakan sebagai tempat pembinaan, pertemuan dan bahkan bisa digunakan untuk masyarakat sekitar melakukan kegiatan ekonomi seperti jual beli untuk meningkatkan ekonomi msyarakat sekitar secara fleksibel.</p>
             </div>
-            <div class="w-full bg-white rounded-md overflow-hidden">
+            <div data-aos="fade-left" class="w-full bg-white rounded-md overflow-hidden">
               <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
               <h2 class="text-black font-bold p-3">Utama Mandala</h2>
-              <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Areal Utama Mandala merupakan area utama dari Pura lingsar atau tempat berdirinya struktur bangunan utama Puradan tempat paling suci untuk melakukan pemujaan terhadap Ista Dewata atau Tuhan Yang Maha Esa. Disini dapat didengarkan lagu pemujaan dari Pemangku dalam memimpin umat melakukan persembahyangan terhadap Ista Dewata. Areal Utama Mandala Pura Lingsar dibagi menjadi dua yaitu komplek Pura Gaduh dan Kemaliq Lingsar.</p>
+              <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Areal Utama Mandala merupakan area utama dari Pura lingsar atau tempat berdirinya struktur bangunan utama Puradan tempat paling suci untuk melakukan pemujaan terhadap Ista Dewata atau Tuhan Yang Maha Esa.</p>
             </div>
           </div>
         </div>
@@ -119,12 +133,12 @@
               Pura Lingsar, didirikan oleh Anak Agung Ngurah dari Karangasem pada tahun 1714, terletak sejauh 15 km dari pusat Kota Mataram. Dinamai Lingsar dalam bahasa Sasak yang artinya 'wahyu yang jelas dari Tuhan'. Di sekitar pura ini, terdapat sumber mata air yang dianggap suci oleh masyarakat Sasak yang menganut kepercayaan Wetu Telu, yang merupakan sinkretisme antara Islam.
             </p>
           </div>
-          <div class="w-full md:w-1/2 sm:px-4">
+          <div data-aos="fade-left" class="w-full md:w-1/2 sm:px-4">
             <img class="object-cover w-full max-h-[350px]" src="https://budayabali.com/uploads/images/202311/image_430x256_6554ac13baa77.jpg" alt="" />
           </div>
         </div>
         <div class="flex justify-between flex-wrap mt-5">
-          <div class="w-full md:w-1/2 sm:px-4">
+          <div data-aos="fade-right" class="w-full md:w-1/2 sm:px-4">
             <video src="./assets/vid.mp4" class="w-full md:h-[200px] lg:h-[350px]" controls></video>
           </div>
           <div class="w-full md:w-1/2 sm:px-4">
@@ -156,12 +170,20 @@
     </footer> -->
     <!-- Custom JavaScript to toggle mobile menu -->
     <script>
+      AOS.init();
       const menuBtn = document.querySelector('#mobileMenuBTN');
       const mobileMenu = document.querySelector('#mobileMenu');
 
       menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
+
+
+      document.querySelector('#showmore').addEventListener('click', function () {
+        this.textContent = "Show Less"
+        document.querySelector("#sejarah").classList.toggle('max-h-[400px]')
+        this.parentElement.classList.toggle('showmore')
+      })
 
       window.onscroll = function () {
         var navbarContent = document.querySelector('#navbar');

@@ -17,4 +17,7 @@
   .zoomIn .boxImg span {
     @apply flex !important;
   }
+  .showmore {
+    @apply absolute py-14 bottom-0 left-0 w-full bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.4)];
+  }
 }
