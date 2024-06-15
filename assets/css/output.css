@@ -667,6 +667,14 @@ video {
   z-index: 50;
 }
 
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
