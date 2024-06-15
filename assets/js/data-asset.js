@@ -1,0 +1,57 @@
+const dataFotoAsset = [
+  {
+    id: 1,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale banten/depan.jpg', '../assets/img/tangible/bale/Bale banten/samping.jpg', '../assets/img/tangible/bale/Bale banten/samping2.jpg'],
+    deskripsi: 'Bale Banten',
+  },
+  {
+    id: 2,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale bundar/depan.jpg', '../assets/img/tangible/bale/Bale bundar/samping.jpg'],
+    deskripsi: 'Bale Bundar',
+  },
+  {
+    id: 3,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale jajar/depan.jpg', '../assets/img/tangible/bale/Bale jajar/samping1.jpg', '../assets/img/tangible/bale/Bale jajar/samping2.jpg', '../assets/img/tangible/bale/Bale jajar/samping3.jpg'],
+    deskripsi: 'Bale Jajar',
+  },
+  {
+    id: 4,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale pawedan/depan.jpg', '../assets/img/tangible/bale/Bale pawedan/samping1.jpg', '../assets/img/tangible/bale/Bale pawedan/samping2.jpg', '../assets/img/tangible/bale/Bale pawedan/samping3.jpg'],
+    deskripsi: 'Bale Pawedan',
+  },
+  {
+    id: 5,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: [
+      '../assets/img/tangible/bale/Bale perarianan/depan.jpg',
+      '../assets/img/tangible/bale/Bale perarianan/samping1.jpg',
+      '../assets/img/tangible/bale/Bale perarianan/samping2.jpg',
+      '../assets/img/tangible/bale/Bale perarianan/samping3.jpg',
+      '../assets/img/tangible/bale/Bale perarianan/samping4.jpg',
+    ],
+    deskripsi: 'Bale Perarianan',
+  },
+  {
+    id: 6,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale sekenem/depan.jpg', '../assets/img/tangible/bale/Bale sekenem/samping1.jpg', '../assets/img/tangible/bale/Bale sekenem/samping2.jpg'],
+    deskripsi: 'Bale Sekenem',
+  },
+  {
+    id: 7,
+    type: 'bale',
+    metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
+    img: ['../assets/img/tangible/bale/Bale sekepat/depan.jpg', '../assets/img/tangible/bale/Bale sekepat/samping1.jpg', '../assets/img/tangible/bale/Bale sekepat/samping2.jpg', '../assets/img/tangible/bale/Bale sekepat/samping3.jpg'],
+    deskripsi: 'Bale Sekepat',
+  },
+];

@@ -21,7 +21,12 @@
       <div class="3xl:container flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+          <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
+            <img src="../assets/img/logo.png" alt="logo" class="max-w-[60px]">
+            <span>
+              Virtual Tour Pura Lingsar
+            </span>
+          </a>
         </div>
         <!-- Navbar Links -->
         <div class="hidden lg:flex md:items-center md:space-x-1">
@@ -81,6 +86,11 @@
         </div>
       </div>
     </div>
+    <img src="../assets/img/tangible/bale/Bale sekepat/depan.jpg" alt="">,
+    <img src="../assets/img/tangible/bale/Bale sekepat/samping1.jpg" alt="">,
+    <img src="../assets/img/tangible/bale/Bale sekepat/samping2.jpg" alt="">,
+    <img src="../assets/img/tangible/bale/Bale sekepat/samping3.jpg" alt="">,
+
 
     <!-- <footer class="py-8 border border-top-slate-900 text-center">
         <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
@@ -134,14 +144,14 @@
       }
 
       function initialize() {
-        const fotoAssets = document.querySelectorAll('#cardsFotoAsset .item');
+        // const fotoAssets = document.querySelectorAll('#cardsFotoAsset .item');
         const readMore = document.querySelectorAll('.boxImg > span > h3');
-        fotoAssets.forEach((el) => {
-          el.addEventListener('click', () => {
-            fotoAssets.forEach((item) => (item != el ? item.classList.remove('zoomIn') : ''));
-            el.classList.toggle('zoomIn');
-          });
-        });
+        // fotoAssets.forEach((el) => {
+        //   el.addEventListener('click', () => {
+        //     fotoAssets.forEach((item) => (item != el ? item.classList.remove('zoomIn') : ''));
+        //     el.classList.toggle('zoomIn');
+        //   });
+        // });
 
         readMore.forEach((el) => {
           const contentPopup = document.querySelector('#contentPopup');

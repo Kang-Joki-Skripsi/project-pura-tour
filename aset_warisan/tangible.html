@@ -6,6 +6,8 @@
     <title>Virtual Tour Pura Lingsar</title>
     <!-- Include the Tailwind CSS CDN -->
     <link href="../assets/css/output.css" rel="stylesheet" />
+    <!-- <link href="../assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/owl/owl.theme.default.min.css" rel="stylesheet" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,6 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="../assets/vendor/owl/owl.carousel.min.js"></script> -->
   </head>
 
   <body class="bg-slate-200">
@@ -21,7 +25,12 @@
       <div class="3xl:container flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="beranda.html" class="text-white text-xl font-bold">Virtual Tour Pura Lingsar</a>
+          <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
+            <img src="../assets/img/logo.png" alt="logo" class="max-w-[60px]">
+            <span>
+              Virtual Tour Pura Lingsar
+            </span>
+          </a>
         </div>
         <!-- Navbar Links -->
         <div class="hidden lg:flex md:items-center md:space-x-1">
@@ -61,28 +70,39 @@
             <button data-type="patung" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">Patung</button>
           </div>
         </div>
-        <div id="cardsFotoAsset" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 place-items-center mt-5 relative">
-          <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item">
-            <div class="relative boxImg">
-              <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
-                <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black">Show More</h3>
-              </span>
-              <img src="../assets/img/hero.jpg" alt="img" />
+        <div id="cardsFotoAsset" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 place-items-center mt-5 relative">
+          <div class="bg-white shadow rounded-md cursor-pointer hover:shadow-xl transition item p-2">
+            <div class="carousel relative overflow-hidden">
+              <div id="carousel-slide" class="flex transition-all">
+                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
+                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
+                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
+                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
+              </div>
+              <button id="prev" class="w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 left-2"><i class="fa-solid fa-chevron-left"></i></button>
+              <button id="next" class="w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 right-2"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis.</p>
+            <div class="p-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis.</p>
+              <center>
+                <a id="showdetail" class="text-white mt-3 inline-block py-1 px-4 bg-green-600 hover:bg-green-800 rounded-full shadow">Show More</a>
+              </center>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="popup-container" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-start sm:items-center justify-center hidden z-50">
-      <div class="relative bg-white px-4 pb-5 pt-16 rounded shadow-md animate-popupAnimation overflow-auto">
+    <div id="popup-container" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-start sm:items-center hidden z-50 h-screen">
+      <div class="relative bg-white px-4 pb-5 pt-16 rounded shadow-md animate-popupAnimation 3xl:container h-full">
         <button id="close-button" class="absolute top-2 left-2 md:top-5 md:left-5 w-6 h-6 bg-white rounded-full md:w-8 md:h-8 mb-5 text-xl">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-arrow-left-circle text-slate-600 hover:text-red-600 active:text-slate-600" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
           </svg>
         </button>
-        <div id="contentPopup" class="flex max-w-[640px] md:max-h-[500px] lg:max-w-[1000px] flex-wrap justify-center items-center"></div>
+        <div id="contentPopup" class="h-full">
+           <iframe src="https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama" class="w-full border-2 border-gray-300 rounded-lg h-full"></iframe>
+        </div>
       </div>
     </div>
 
@@ -100,6 +120,8 @@
         <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
     </footer> -->
     <!-- Custom JavaScript to toggle mobile menu -->
+     <script src="../assets/js/crouselku.js"></script>
+     <script src="../assets/js/data-asset.js"></script>
     <script>
       const menuBtn = document.querySelector('#mobileMenuBTN');
       const mobileMenu = document.querySelector('#mobileMenu');
@@ -108,210 +130,49 @@
       const closeBtnPopup = document.querySelector('#close-button');
       const menuFotoAssets = document.querySelectorAll('#menuFotoAsset > button');
 
-      const dataFotoAsset = [
-        {
-          id: 1,
-          type: 'bale',
-          nama: 'foto 1',
-          bangunan: 'bangunan 1',
-          stana: 'stana 1',
-          letak: 'letak 1',
-          lokasi: 'lokasi 1',
-          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 2,
-          type: 'bale',
-          nama: 'foto 2',
-          bangunan: 'bangunan 2',
-          stana: 'stana 2',
-          letak: 'letak 2',
-          lokasi: 'lokasi 2',
-          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 3,
-          type: 'bale',
-          nama: 'foto 3',
-          bangunan: 'bangunan 3',
-          stana: 'stana 3',
-          letak: 'letak 3',
-          lokasi: 'lokasi 3',
-          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 4,
-          type: 'bale',
-          nama: 'foto 4',
-          bangunan: 'bangunan 4',
-          stana: 'stana 4',
-          letak: 'letak 4',
-          lokasi: 'lokasi 4',
-          img: 'https://lombokbaratkab.go.id/wp-content/uploads/2012/04/lingsar.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 5,
-          type: 'pelinggih',
-          nama: 'foto 5',
-          bangunan: 'bangunan 5',
-          stana: 'stana 5',
-          letak: 'letak 5',
-          lokasi: 'lokasi 5',
-          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 6,
-          type: 'pelinggih',
-          nama: 'foto 6',
-          bangunan: 'bangunan 6',
-          stana: 'stana 6',
-          letak: 'letak 6',
-          lokasi: 'lokasi 6',
-          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 7,
-          type: 'pelinggih',
-          nama: 'foto 7',
-          bangunan: 'bangunan 7',
-          stana: 'stana 7',
-          letak: 'letak 7',
-          lokasi: 'lokasi 7',
-          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 8,
-          type: 'pelinggih',
-          nama: 'foto 8',
-          bangunan: 'bangunan 8',
-          stana: 'stana 8',
-          letak: 'letak 8',
-          lokasi: 'lokasi 8',
-          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuBIleU3Qa6t94qXmYja2DKFYMeeatZdxHyLIvzKTpg&s',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 9,
-          type: 'patung',
-          nama: 'foto 9',
-          bangunan: 'bangunan 9',
-          stana: 'stana 9',
-          letak: 'letak 9',
-          lokasi: 'lokasi 9',
-          img: '../assets/img/hero.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 10,
-          type: 'patung',
-          nama: 'foto 10',
-          bangunan: 'bangunan 10',
-          stana: 'stana 10',
-          letak: 'letak 10',
-          lokasi: 'lokasi 10',
-          img: '../assets/img/hero.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 11,
-          type: 'patung',
-          nama: 'foto 11',
-          bangunan: 'bangunan 11',
-          stana: 'stana 11',
-          letak: 'letak 11',
-          lokasi: 'lokasi 11',
-          img: '../assets/img/hero.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-        {
-          id: 12,
-          type: 'patung',
-          nama: 'foto 12',
-          bangunan: 'bangunan 12',
-          stana: 'stana 12',
-          letak: 'letak 12',
-          lokasi: 'lokasi 12',
-          img: '../assets/img/hero.jpg',
-          deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis',
-        },
-      ];
-
       function loadDataAsset(data) {
+        let imgs = '';
+        data.img.map(url => {
+           imgs += `<img class="w-full" src="${url}" alt="img" />`;
+        });
+
         return `
-              <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item">
-                <div class="relative boxImg">
-                  <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
-                    <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black" data-id="${data.id}">Show More</h3>
-                  </span>
-                  <img src="${data.img}" alt="img" class="w-full" />
-                </div>
-                <p class="p-4">${data.deskripsi}</p>
+            <div class="bg-white shadow rounded-md cursor-pointer hover:shadow-xl transition item p-2">
+            <div class="crousel relative overflow-hidden">
+              <div class="flex transition-all crousel-slide" data-counter='0'>
+                ${imgs}
               </div>
+              <button class="prev w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 left-2"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="next w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 right-2"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-center">${data.deskripsi}</p>
+              <center>
+                <a data-id='${data.id}' id="showdetail" class=" text-sm text-white mt-3 inline-block py-1 px-4 bg-green-600 hover:bg-green-800 rounded-full shadow">Show More</a>
+              </center>
+            </div>
+          </div>
             `;
       }
 
       function loadPopup(data) {
         return `
-            <div class="w-full lg:w-1/2 p-4">
-              <img class="w-full h-full" src="${data.img}" alt="" />
-            </div>
-            <div class="w-full lg:w-1/2 p-4">
-              <h2 class="text-2xl">Informasi Bangunan</h2>
-              <table class="my-6">
-                <tr>
-                  <td class="py-1">Nama</td>
-                  <td class="pl-14 font-semibold">: ${data.nama}</td>
-                </tr>
-                <tr>
-                  <td class="py-1">Bangunan</td>
-                  <td class="pl-14 font-semibold">: ${data.bangunan}</td>
-                </tr>
-                <tr>
-                  <td class="py-1">Stana</td>
-                  <td class="pl-14 font-semibold">: ${data.stana}</td>
-                </tr>
-                <tr>
-                  <td class="py-1">Letak</td>
-                  <td class="pl-14 font-semibold">: ${data.letak}</td>
-                </tr>
-                <tr>
-                  <td class="py-1">Lokasi</td>
-                  <td class="pl-14 font-semibold">: ${data.lokasi}</td>
-                </tr>
-              </table>
-              <p class="text-justify text-sm">
-                ${data.deskripsi}
-              </p>
-            </div>
-          `;
+          <iframe src="${data.metadata}" class="w-full border-2 border-gray-300 rounded-lg h-full"></iframe>
+        `;
       }
 
       function initialize() {
-        const fotoAssets = document.querySelectorAll('#cardsFotoAsset .item');
-        const readMore = document.querySelectorAll('.boxImg > span > h3');
-        fotoAssets.forEach((el) => {
-          el.addEventListener('click', () => {
-            fotoAssets.forEach((item) => (item != el ? item.classList.remove('zoomIn') : ''));
-            el.classList.toggle('zoomIn');
-          });
-        });
-
+        const readMore = document.querySelectorAll('#showdetail');
+        
         readMore.forEach((el) => {
           const contentPopup = document.querySelector('#contentPopup');
-          el.addEventListener('click', (e) => {
+          el.addEventListener('click', () => {
             // mencari element parent dari element yang di click berdasar id
             // e.target.closest('#cardsFotoAssetItem')
             const id = el.getAttribute('data-id');
             const data = dataFotoAsset.find((e) => e.id == id);
             contentPopup.innerHTML = loadPopup(data);
-            popupContainer.classList.add('flex');
+            // popupContainer.classList.add('flex');
             popupContainer.classList.remove('hidden');
           });
         });
@@ -333,6 +194,7 @@
         });
 
         initialize();
+        initCrousel();
       });
 
       menuFotoAssets.forEach((el) => {
@@ -351,6 +213,7 @@
           }
 
           initialize();
+          initCrousel();
         });
       });
 
