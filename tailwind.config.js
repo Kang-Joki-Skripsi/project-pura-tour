@@ -15,8 +15,9 @@ module.exports = {
         "hero": 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg")',
       },
       colors: {
-        primary: '#c86d41',
-        secondary: '#656d71',
+        primary: '#9c4a29',
+        secondary: '#edebe4',
+        three: '#c9ba86',
       },
       animation: {
         popupAnimation: 'popupAnimation 0.3s ease',
