@@ -4,16 +4,16 @@
     <div class="container">
         <div class="flex flex-wrap lg:flex-nowrap lg:space-x-5 justify-between items-start">
             <div class="w-full lg:w-1/2">
-                <img class="w-full h-full" src="https://cdn-assetd.kompas.id/BfzOPL0UfJNCihQ66CYXZc1PR_s=/1024x576/https%3A%2F%2Fkompas.id%2Fwp-content%2Fuploads%2F2018%2F03%2F20180311H_PURA_C_web.jpg" alt="Pura Dalem Sejati">
+                <img class="w-full h-full" src="{{asset('img/pura1.webp')}}" alt="Pura Dalem Sejati">
             </div>
             <div id="map" class="w-full lg:w-1/2 mt-5 lg:mt-0">
                 <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold">Pura Dalem Srijati</h1>
-                <p class="text-justify my-4 text-sm lg:text-[16px]">Balidwipa dimasa silam memendam sejarah pemerintahan oleh Raja – raja yang acap kali sebagai kerajaan merdeka yang berdiri sendiri, namun kadang kala hidup berdampingan dengan kerajaan – kerajaan besar di pulau jawa , bahkan tidak jarang pada kurun waktu tertentu merupakan jajahan dari Kerajaan – kerajaan besar di pulau Jawa , namun sebaliknya sering kali raja – raja Bali mampu menguasai daerah Jawa bagian Timur yaitu Blambangan dan Pasuruan , bahkan pulau Lombok dan Sumba.</p>
+                <p class="text-justify my-4 text-sm lg:text-[16px]">Berdasarkan hasil wawancara dengan Bapak I Nyoman Surianta, S.Sn., M.Si selaku Bendesa Adat Desa Sibang Gede, dijelaskan mengenai Pura Dalem Srijati Srijati sampai saat ini belum ada yang tau pasti untuk sejarah puranya, karena pendahulu – pendahulunya pun sudah nampek atau mendapati Pura Dalem Srijati, untuk itu beliau menjelaskan sesuai dengan cerita – cerita pendahulunya. Pura Dalem Srijatii terletak di tenggara Desa Sibang Gede, berdiri diatas tanah kurang lebih seluas 2.154m² memanjang dari arah utara ke selatan dengan pembagian area pura yaitu Utama mandala, Madya mandala dan Nista mandala dengan dikelilingi pagar batu bata Pura Dalem Srijati dapat diakses dengan mengendarai sepeda motor, mobil ataupun berjalan kaki.</p>
             </div>
         </div>
         <div class="flex flex-wrap lg:flex-nowrap lg:space-x-5 justify-between items-start lg:mt-16">
             <div class="w-full lg:w-1/2">
-                <p class="text-justify text-sm lg:text-[16px]">Zaman kerajaan di Bali mencapai puncak keemasannya pada masa pemerintahaan Dalem Çri Batur Renggong yang melepaskan diri dari kekuasaan Majapahit di Jawa pada pertengahan abad ke XVI, Ketika itu Gelgel menjadi pusat pemerintahan negeri. Namun pada masa pemerintahan Dalem Çri Di Made Keraton Gelgel Hancur lebur karena terjadi perebutan kekuasaan pada tahun 1651 Masehi yang dilakukan oleh Kiayi Agung Maruti dalam kedudukannya sebagai Patih Agung , sehingga sejak saat itu Bali terpecah menjadi kerajaan – kerajaan kecil yang masing – masing memiliki kekuasaan Mandiri. Kiayi Agung Maruti memerintahkan kerajaan Gelgel, yang tidak utuh lagi selama 26 tahun, sehingga akhirnnya gelgel bisa direbut kembali oleh putra bungsu Dalem Çri Di Made yang bernama Dewa Agung Jambe. Tersebutlah Kiayi Agung Maruti beserta keluarga dan Pengikut pengikutnya melarikan diri mengungsi ke hutan Jimbaran di sebelah selatan Badung.</p>
+                <p class="text-justify text-sm lg:text-[16px]">Pura Dalem Srijati sudah berdiri sebelum Pura Desa lan Puseh dan Pura Dalem Gede yang di barat laut desa. Pura dalem srijati sudah ada waktu jaman kerajaan dahulu yang merupakan Pura tertua yang ada di Desa Sibang Gede. Pura dalem srijati dulunya adalah pusat Pura sebelum kedatangan seorang raja dari kerajaan mengwi yaitu Raja Sri Kresna Kepakisan. Raja Sri Kresna Kepakisan datang ke Desa Sibang Gede dan macekan atau memecah pura menjadi Pura khayangan tiga, sehingga sampai sekarang di Desa Sibang Gede ada dua Pura Dalem, yang pertama itu di Pura Dalem Srijati dan yang kedua Pura Dalem Gede, hingga saat ini setiap tetoyan atau tirta tetap nuurin pekuluh ke Pura Dalem Srijati dan setiap piodalan baik di Pura Desa lan Puseh maupun di Pura Dalem Gede tetap nunas tetoyan atau tirta ke Pura Dalem Srijati karena keyakinan bahwa Pura Dalem Srijati itu sebagai pusat Pura dijaman dahulu.</p>
             </div>
             <div id="map" class="w-full lg:w-1/2 mt-4 lg:mt-0">
                 <iframe class="w-full h-[350px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31561.845519748196!2d115.19964480085729!3d-8.573803917654962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23e9c75836f47%3A0x4b5df247888cde3a!2sSibang%20Gede%2C%20Kec.%20Abiansemal%2C%20Kabupaten%20Badung%2C%20Bali!5e0!3m2!1sid!2sid!4v1715745238437!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -21,7 +21,7 @@
         </div>
         <div class="flex flex-wrap lg:flex-nowrap lg:space-x-5 justify-between items-start mt-4 lg:mt-16">
             <div class="w-full lg:w-1/2">
-                <img class="w-full h-full" src="https://cdn-assetd.kompas.id/BfzOPL0UfJNCihQ66CYXZc1PR_s=/1024x576/https%3A%2F%2Fkompas.id%2Fwp-content%2Fuploads%2F2018%2F03%2F20180311H_PURA_C_web.jpg" alt="Pura Dalem Sejati">
+                <img class="w-full h-full" src="{{asset('img/pura.webp')}}" alt="Pura Dalem Sejati">
             </div>
             <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
                 <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold mb-3">Piodalan Pura</h1>

@@ -7,7 +7,10 @@
     <title>SIBANG GEDE | {{$title}}</title>
     <!-- Include the Tailwind CSS CDN -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{asset('vendor/aos/aos.css')}}">
+    <script src="{{asset('vendor/aos/aos.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
     <style>
         /* Untuk browser WebKit (Chrome, Safari) */
@@ -28,7 +31,7 @@
     </style>
 </head>
 
-<body class="bg-slate-200">
+<body class="bg-slate-200 overflow-x-hidden">
     <!-- Navbar -->
     <nav id="navbar" class="bg-red-800 p-4 top-0">
         <div class="container flex justify-between items-center">
@@ -101,6 +104,8 @@
                 navbar.classList.remove("scrollAnimate")
             }
         }
+
+        AOS.init();
     </script>
 </body>
 </html>
