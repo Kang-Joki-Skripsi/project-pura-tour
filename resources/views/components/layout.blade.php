@@ -76,9 +76,8 @@
 
     <footer class="py-8 border border-top-slate-900 text-center">
         <div id="sosial-media" class="text-3xl text-slate-600 space-x-3">
-            <a href="#"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="hover:cursor-pointer fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/infosibanggede?igsh=YW5sNXkyZXplYzk4"><i class="hover:cursor-pointer fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/perbekel.sibanggede.7?mibextid=LQQJ4d"><i class="hover:cursor-pointer fa-brands fa-facebook-f"></i></a>
         </div>
         <div id="footer-item" class="space-x-3 my-3">
             <a href="{{route('beranda')}}" class="text-blue-600 hover:cursor-pointer">Beranda</a>
