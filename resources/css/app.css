@@ -11,4 +11,8 @@
         @apply fixed z-10 top-0 left-0 w-full animate-scrollAnimation;
     }
 
+    .showmore {
+        @apply absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-[rgba(211,211,211,0.85)] shadow-lg;
+    }
+
 }
