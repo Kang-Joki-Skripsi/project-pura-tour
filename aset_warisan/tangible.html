@@ -130,6 +130,10 @@
       const closeBtnPopup = document.querySelector('#close-button');
       const menuFotoAssets = document.querySelectorAll('#menuFotoAsset > button');
 
+      let fotopPotrait = dataFotoAsset.filter((a) => a.imgType == 'potrait');
+      let fotoLandscape = dataFotoAsset.filter((a) => a.imgType == 'landscape');
+      const allFotoAsset = [...fotopPotrait, ...fotoLandscape];
+
       function loadDataAsset(data) {
         let imgs = '';
         data.img.map(url => {
@@ -189,7 +193,7 @@
 
       window.addEventListener('load', () => {
         tempFotoAssets.innerHTML = '';
-        dataFotoAsset.forEach((data) => {
+        allFotoAsset.forEach((data) => {
           tempFotoAssets.innerHTML += loadDataAsset(data);
         });
 
@@ -202,12 +206,12 @@
           tempFotoAssets.innerHTML = '';
           const type = el.getAttribute('data-type');
           if (type != 'semua') {
-            const fotoAssets = dataFotoAsset.filter((a) => a.type == type);
+            const fotoAssets = allFotoAsset.filter((a) => a.type == type);
             fotoAssets.forEach((data) => {
               tempFotoAssets.innerHTML += loadDataAsset(data);
             });
           } else {
-            dataFotoAsset.forEach((data) => {
+            allFotoAsset.forEach((data) => {
               tempFotoAssets.innerHTML += loadDataAsset(data);
             });
           }
