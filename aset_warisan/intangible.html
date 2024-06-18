@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
 
   <body class="bg-slate-200">
@@ -57,22 +58,19 @@
         <a href="/informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
       </div>
     </nav>
-
+    
     <div class="3xl:container overflow-x-clip">
       <div class="py-5 px-4 sm:px-10 md:py-14">
         <div class="flex justify-evenly text-white items-center bg-primary py-4 md:py-6 flex-col md:flex-row">
           <h1 class="text-2xl font-bold mb-5 md:text-3xl md:mb-0">Foto Aset</h1>
         </div>
-        <div id="cardsFotoAsset" class="flex justify-center mt-5 relative">
-          <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item w-full md:w-1/2">
-            <div class="relative boxImg">
-              <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
-                <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black">Show More</h3>
-              </span>
-              <img src="../assets/img/hero.jpg" alt="img" />
-            </div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis.</p>
+        <div class="flex justify-center w-full py-16" id="loading">
+          <div class="flex items-center w-1/2 justify-center">
+            <div class="animate-spin w-5 h-5 rounded-full border-t-2 border-r-2 border-slate-700 mr-4"></div>
+            Load Data...
           </div>
+        </div>
+        <div id="cardsFotoAsset" class="flex justify-center mt-5 relative">
         </div>
       </div>
     </div>
@@ -105,6 +103,7 @@
         <span class="text-slate-400 font-open-sans">&copy; Copyright 2024, All rights reserved.</span>
     </footer> -->
     <!-- Custom JavaScript to toggle mobile menu -->
+     <script src="../assets/js/crouselku.js"></script>
     <script>
       const menuBtn = document.querySelector('#mobileMenuBTN');
       const mobileMenu = document.querySelector('#mobileMenu');
@@ -118,7 +117,11 @@
           id: 1,
           title: "Perang Topat Di Pura Lingsar",
           metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
-          img: '../assets/img/intangible/perang-topat.jpeg',
+          img: [
+            "../assets/img/intangible/IMG_4465.webp",
+            "../assets/img/intangible/Perang-Topat-di-Pura-Lingsar-14-2048x1290.webp",
+            "../assets/img/intangible/perang-topat.jpeg",
+          ],
           deskripsi: `Event tahunan Perang Topat adalah sebuah acara adat yang diadakan di Pura Lingsar, Kabupaten Lombok Barat. Perang ini merupakan simbol perdamaian antara umat Muslim dan Hindu di Lombok. Acara ini dilakukan pada sore hari, setiap bulan purnama ke tujuh dalam penanggalan Suku Sasak.
           Perang Topat menjadi salah satu event yang masuk dalam Kharisma Event Nusantara (KEN) 2023 atau kalender pariwisata nasional. Selain itu, Perang Topat juga merupakan Warisan Budaya Takbenda (WBTB) yang diakui secara nasional melalui surat keputusan Menteri Pendidikan dan Kebudayaan RI, Nomor 19255/mpk.F/kb/2020.
           Pura Lingsar tempat diselenggarakan ini juga adalah sebuah pelajaran tentang toleransi. Sehingga Perang Topat dan Pujawali ini bukan hanya sebagai ritual tahunan, tetapi ini juga momentum untuk kita mengecas spirit toleransi yang semakin dibutuhkan didalam kita mengisi proses pembangunan di daerah maupun negara`,
@@ -126,16 +129,27 @@
       ];
 
       function loadDataAsset(data) {
+        let imgs = '';
+        data.img.map(url => {
+           imgs += `<img class="w-full" src="${url}" alt="img" />`;
+        });
         return `
-              <div class="bg-white shadow rounded-md overflow-hidden cursor-pointer hover:shadow-xl transition item w-full md:w-1/2">
-                <div class="relative boxImg">
-                  <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
-                    <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black" data-id="${data.id}">Show More</h3>
-                  </span>
-                  <img src="${data.img}" alt="img" class="w-full max-h-[500px]" />
+              <div class="bg-white shadow rounded-md cursor-pointer hover:shadow-xl transition item p-2 lg:w-1/2">
+                <div class="crousel relative overflow-hidden">
+                  <div class="flex transition-all crousel-slide" data-counter='0'>
+                    ${imgs}
+                  </div>
+                  <button class="prev w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-[1] left-2"><i class="fa-solid fa-chevron-left"></i></button>
+                  <button class="next w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-[1] right-2"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
-                <h1 class="p-5 font-bold text-center">${data.title}</h1>
-                <p class="px-5 mb-5 text-justify">${data.deskripsi}</p>
+                <div class="p-4">
+                  <p class="font-bold text-center text-xl">${data.title}</p>
+                  <p class="mt-5 text-justify">Event tahunan Perang Topat adalah sebuah acara adat yang diadakan di Pura Lingsar, Kabupaten Lombok Barat. Perang ini merupakan simbol perdamaian antara umat Muslim dan Hindu di Lombok. Acara ini dilakukan pada sore hari, setiap bulan purnama ke tujuh dalam penanggalan Suku Sasak.
+
+                  Perang Topat menjadi salah satu event yang masuk dalam Kharisma Event Nusantara (KEN) 2023 atau kalender pariwisata nasional. Selain itu, Perang Topat juga merupakan Warisan Budaya Takbenda (WBTB) yang diakui secara nasional melalui surat keputusan Menteri Pendidikan dan Kebudayaan RI, Nomor 19255/mpk.F/kb/2020.
+
+                  Pura Lingsar tempat diselenggarakan ini juga adalah sebuah pelajaran tentang toleransi. Sehingga Perang Topat dan Pujawali ini bukan hanya sebagai ritual tahunan, tetapi ini juga momentum untuk kita mengecas spirit toleransi yang semakin dibutuhkan didalam kita mengisi proses pembangunan di daerah maupun negara</p>
+                </div>
               </div>
             `;
       }
@@ -181,12 +195,14 @@
       });
 
       window.addEventListener('load', () => {
+        document.querySelector("#loading").classList.add('hidden');
         tempFotoAssets.innerHTML = '';
         dataFotoAsset.forEach((data) => {
           tempFotoAssets.innerHTML += loadDataAsset(data);
         });
 
         initialize();
+        initCrousel();
       });
 
       menuFotoAssets.forEach((el) => {

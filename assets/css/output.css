@@ -854,6 +854,10 @@ video {
   width: 300px;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .max-w-\[60px\] {
   max-width: 60px;
 }
@@ -1651,6 +1655,10 @@ video {
 
   .lg\:w-\[250px\] {
     width: 250px;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:grid-cols-4 {
