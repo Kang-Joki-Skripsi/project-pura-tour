@@ -70,25 +70,13 @@
             <button data-type="patung" class="hover:bg-slate-200 bg-white text-black px-4 py-1 rounded hover:scale-[1.1] transition font-semibold shadow capitalize">Patung</button>
           </div>
         </div>
-        <div id="cardsFotoAsset" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 place-items-center mt-5 relative">
-          <div class="bg-white shadow rounded-md cursor-pointer hover:shadow-xl transition item p-2">
-            <div class="carousel relative overflow-hidden">
-              <div id="carousel-slide" class="flex transition-all">
-                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
-                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
-                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
-                <img class="w-full" src="../assets/img/hero.jpg" alt="img" />
-              </div>
-              <button id="prev" class="w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 left-2"><i class="fa-solid fa-chevron-left"></i></button>
-              <button id="next" class="w-8 h-8 flex items-center justify-center bg-white rounded-full text-black font-bold absolute top-1/2 -translate-y-1/2 cursor-pointer z-10 right-2"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            <div class="p-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non quisquam ipsa unde? A ex nesciunt quo perspiciatis, sequi debitis.</p>
-              <center>
-                <a id="showdetail" class="text-white mt-3 inline-block py-1 px-4 bg-green-600 hover:bg-green-800 rounded-full shadow">Show More</a>
-              </center>
-            </div>
+        <div class="flex justify-center w-full py-16" id="loading">
+          <div class="flex items-center w-1/2 justify-center">
+            <div class="animate-spin w-5 h-5 rounded-full border-t-2 border-r-2 border-slate-700 mr-4"></div>
+            Load Data...
           </div>
+        </div>
+        <div id="cardsFotoAsset" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 place-items-center mt-5 relative">
         </div>
       </div>
     </div>
@@ -192,6 +180,7 @@
       });
 
       window.addEventListener('load', () => {
+        document.querySelector("#loading").classList.add('hidden');
         tempFotoAssets.innerHTML = '';
         allFotoAsset.forEach((data) => {
           tempFotoAssets.innerHTML += loadDataAsset(data);

@@ -61,7 +61,7 @@
           <!-- Video player -->
           <div class="w-full lg:w-2/3 h-full md:px-4" id="frame3D"></div>
           <!-- Playlist -->
-          <div class="w-[400px] lg:w-1/3 lg:pl-4 mt-5 lg:mt-0 md:px-4">
+          <div class="w-[400px] lg:w-1/3 lg:pl-4 mt-5 lg:mt-0 md:px-4 overflow-auto">
             <ul id="playlist"></ul>
           </div>
         </div>
@@ -105,21 +105,42 @@
           title: 'Patung 2',
           deskripsi: 'Patung ini berjumlah 2 patung dengan bentk yang sama saling berpasangan, berada pada bangunan candi bentar yang terletak antara Nista Mandala dan Pratama Mandala',
           src: 'https://sketchfab.com/models/cc37461d82844d79aa55985d4a700d3c/embed',
-          thumbnail: 'https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/1024.jpg',
+          thumbnail: 'https://media.sketchfab.com/models/cc37461d82844d79aa55985d4a700d3c/thumbnails/3e838e064a774a99a725b1c67522dcd7/0acee56c83c84957b3ccf99540949da6.jpeg',
         },
         {
           id: 3,
-          title: 'Pelinggih Penyungsung Betara Ngengurah',
-          deskripsi: 'Bangunan Pelinggih yang terletak di komplek Pura Gaduh. sebagai tempat pemujaan/bersemayamnya Ratu Ngurah',
-          src: 'https://sketchfab.com/models/07050276b38242138bad33b912690e6f/embed',
-          thumbnail: 'https://media.sketchfab.com/models/07050276b38242138bad33b912690e6f/thumbnails/d3eb4d933e83434d96b1526fa0991b70/b5a6ac3b0f5641f683a9497fe219b4fe.jpeg',
+          title: 'Katil',
+          deskripsi: `Tempat pemuka agama memimpin upacara di pura`,
+          src: 'https://sketchfab.com/models/6e4b8537a31b4c45b55263f516ff3d65/embed',
+          thumbnail: 'https://media.sketchfab.com/models/6e4b8537a31b4c45b55263f516ff3d65/thumbnails/08c8fbd51ec94a0cb9c49fa5900688cd/2054f105a0c645f683dee76bfd6fcda0.jpeg',
         },
         {
           id: 4,
-          title: 'Bale Bundar',
-          deskripsi: `Bale bundar ini digunakan sebagai tempat kegiatan rapat dan beristirahat bagi umat  yang bersembahyang. Bale ini terletak di areal nista mandala atau bagian taman. <br><br> note : pada bentuk asli, bangunan terlihat dengan kondisi sempurna. hasil terlihat seperti itu adalah dikarenakan keterbatasan angle pada saat pengambilan gambar atau scanning`,
-          src: 'https://sketchfab.com/models/0e9af8158bb145049f8d60aab6dce63b/embed',
-          thumbnail: 'https://media.sketchfab.com/models/0e9af8158bb145049f8d60aab6dce63b/thumbnails/bc8e0074adb346958c9de7e61290c3ae/efaa4394c256436387f5a6e0e8b28330.jpeg',
+          title: 'Arca Garuda Wisnu (Mata Air Suci)',
+          deskripsi: `Objek yang disebut Batara Wisnu atau Batara Gangga. Konon jika kita melempar uang koin ke mata air maka akan dikabulkan keinginan sesuai dengan kepercayaan masing-masing`,
+          src: 'https://sketchfab.com/models/48dee9ef84bb42ca957518f1f7ae2553/embed',
+          thumbnail: 'https://media.sketchfab.com/models/48dee9ef84bb42ca957518f1f7ae2553/thumbnails/70f1293102214a9885427000f76ff06d/f1038c7f0b694e2f8b451fb3d911352a.jpeg',
+        },
+        {
+          id: 5,
+          title: 'Pancuran',
+          deskripsi: `Pancuran yang terletak di sebelah selatan Kemaliq, ada dua buah pancuran yang berada di sebelah barat dan timur, biasanya di manfaatkan untuk membersihkan diri sebelum melakukan peribadatan`,
+          src: 'https://sketchfab.com/models/c39acf8805ea4893acd635b13198bd62/embed',
+          thumbnail: 'https://media.sketchfab.com/models/c39acf8805ea4893acd635b13198bd62/thumbnails/f3c95f4b4af64ffa8427658f0072722e/fba1dd3cc3c24b268eba620939c5b32a.jpeg',
+        },
+        {
+          id: 6,
+          title: 'Kori Agung Komplek Kemaliq',
+          deskripsi: `Merupakan pintu masuk menuju komplek area Kemaliq yang berbentuk sederhana dengan dua patung didepannya`,
+          src: 'https://sketchfab.com/models/95f83c68f2144bcabbbb5adba4b04ae0/embed',
+          thumbnail: 'https://media.sketchfab.com/models/95f83c68f2144bcabbbb5adba4b04ae0/thumbnails/538b15ffa12b4405929541fd05042780/f2bf72ce01894465b3cb2fc7d88bf0c0.jpeg',
+        },
+        {
+          id: 7,
+          title: 'Penyungsungan Betara Gunung Agung',
+          deskripsi: `terbuat dari batu bata dan batu padas tanpa atap. Badan (Pelinggih) dari bangunan ini penuh dengan hiasan bunga padma dan relief punakawan yang ada dalam cerita pewayangan.`,
+          src: 'https://sketchfab.com/models/36aba03776fb4e2b9e5d9a8b8585db2b/embed',
+          thumbnail: 'https://media.sketchfab.com/models/36aba03776fb4e2b9e5d9a8b8585db2b/thumbnails/24c2b3a56eac4f3698f20b794582c44c/ea3427e7b0ab457290e6bd63aa552652.jpeg',
         },
       ];
 
@@ -153,7 +174,7 @@
             >
             </iframe>
             <h1 class="font-bold mt-5 text-2xl md:text-3xl">${data.title}</h1>
-            <p class="my-3 pb-8 text-sm md:text-[16px]">${data.deskripsi}</p>
+            <p class="my-3">${data.deskripsi}</p>
         `;
       }
 
