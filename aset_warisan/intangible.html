@@ -17,24 +17,27 @@
 
   <body class="bg-slate-200">
     <!-- Navbar -->
-    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 sticky top-0">
+    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 top-0">
       <div class="3xl:container flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
+        <div>
+          <!-- Logo -->
           <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
             <img src="../assets/img/logo.png" alt="logo" class="max-w-[60px]">
             <span>
               Virtual Tour Pura Lingsar
             </span>
           </a>
+          <!-- Navbar Links -->
+          <div class="hidden lg:flex md:items-center md:space-x-1 mt-2">
+            <a href="/beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+            <a href="/aset.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+            <a href="/virtual_tour/index.htm" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+            <a href="/3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+            <a href="/informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+          </div>
         </div>
-        <!-- Navbar Links -->
-        <div class="hidden lg:flex md:items-center md:space-x-1">
-          <a href="../beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
-          <a href="../aset.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
-          <a href="../virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
-          <a href="../3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
-          <a href="../informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        <div class="hidden lg:block">
+          <p class="text-right text-white font-semibold">Desa Lingsar, <br> Kecamatan Narmada, <br>Provinsi NTB</p>
         </div>
         <!-- Mobile Menu Button (Hamburger Icon) -->
         <div id="mobileMenuBTN" class="lg:hidden">
@@ -47,11 +50,11 @@
       </div>
       <!-- Mobile Menu (Hidden by Default) -->
       <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
-        <a href="../beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
-        <a href="../aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
-        <a href="../virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
-        <a href="../3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
-        <a href="../informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+        <a href="/beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <a href="/aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="//virtual_tour/index.htm" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="/3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="/informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
       </div>
     </nav>
 
@@ -113,9 +116,12 @@
       const dataFotoAsset = [
         {
           id: 1,
+          title: "Perang Topat Di Pura Lingsar",
           metadata: 'https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama',
           img: '../assets/img/intangible/perang-topat.jpeg',
-          deskripsi: 'Perang Topat Di Pura Lingsar',
+          deskripsi: `Event tahunan Perang Topat adalah sebuah acara adat yang diadakan di Pura Lingsar, Kabupaten Lombok Barat. Perang ini merupakan simbol perdamaian antara umat Muslim dan Hindu di Lombok. Acara ini dilakukan pada sore hari, setiap bulan purnama ke tujuh dalam penanggalan Suku Sasak.
+          Perang Topat menjadi salah satu event yang masuk dalam Kharisma Event Nusantara (KEN) 2023 atau kalender pariwisata nasional. Selain itu, Perang Topat juga merupakan Warisan Budaya Takbenda (WBTB) yang diakui secara nasional melalui surat keputusan Menteri Pendidikan dan Kebudayaan RI, Nomor 19255/mpk.F/kb/2020.
+          Pura Lingsar tempat diselenggarakan ini juga adalah sebuah pelajaran tentang toleransi. Sehingga Perang Topat dan Pujawali ini bukan hanya sebagai ritual tahunan, tetapi ini juga momentum untuk kita mengecas spirit toleransi yang semakin dibutuhkan didalam kita mengisi proses pembangunan di daerah maupun negara`,
         },
       ];
 
@@ -126,9 +132,10 @@
                   <span class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full hidden items-center justify-center">
                     <h3 class="text-white border border-white py-1 px-4 hover:bg-white hover:text-black" data-id="${data.id}">Show More</h3>
                   </span>
-                  <img src="${data.img}" alt="img" class="w-full max-h-[400px]" />
+                  <img src="${data.img}" alt="img" class="w-full max-h-[500px]" />
                 </div>
-                <p class="p-4">${data.deskripsi}</p>
+                <h1 class="p-5 font-bold text-center">${data.title}</h1>
+                <p class="px-5 mb-5 text-justify">${data.deskripsi}</p>
               </div>
             `;
       }
@@ -141,7 +148,7 @@
 
       function initialize() {
         // const fotoAssets = document.querySelectorAll('#cardsFotoAsset .item');
-        const readMore = document.querySelectorAll('.boxImg > span > h3');
+        const readMore = document.querySelectorAll('#showdetail');
         // fotoAssets.forEach((el) => {
         //   el.addEventListener('click', () => {
         //     fotoAssets.forEach((item) => (item != el ? item.classList.remove('zoomIn') : ''));
@@ -152,13 +159,12 @@
         readMore.forEach((el) => {
           const contentPopup = document.querySelector('#contentPopup');
           el.addEventListener('click', (e) => {
-            // mencari element parent dari element yang di click berdasar id
-            e.target.closest('#cardsFotoAssetItem')
+             // mencari element parent dari element yang di click berdasar id
+            // e.target.closest('#cardsFotoAssetItem')
             const id = el.getAttribute('data-id');
             const data = dataFotoAsset.find((e) => e.id == id);
             contentPopup.innerHTML = loadPopup(data);
             // popupContainer.classList.add('flex');
-            document.body.classList.add('overflow-hidden')
             popupContainer.classList.remove('hidden');
           });
         });
@@ -203,12 +209,12 @@
       });
 
       window.onscroll = function () {
-        var navbarContent = document.querySelector('#navbar');
-        if (window.pageYOffset > 25) {
-          navbarContent.classList.add('scrollAnimate');
-        } else {
-          navbarContent.classList.remove('scrollAnimate');
-        }
+        // var navbarContent = document.querySelector('#navbar');
+        // if (window.pageYOffset > 100) {
+        //   navbarContent.classList.add('scrollAnimate');
+        // } else {
+        //   navbarContent.classList.remove('scrollAnimate');
+        // }
       };
     </script>
   </body>

@@ -17,26 +17,29 @@
     <script src="./assets/vendor/aos/aos.js"></script>
   </head>
 
-  <body class="bg-secondary">
+  <body class="bg-secondary overflow-x-hidden">
     <!-- Navbar -->
     <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 top-0">
       <div class="3xl:container flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
+        <div>
+          <!-- Logo -->
           <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
             <img src="./assets/img/logo.png" alt="logo" class="max-w-[60px]">
             <span>
               Virtual Tour Pura Lingsar
             </span>
           </a>
+          <!-- Navbar Links -->
+          <div class="hidden lg:flex md:items-center md:space-x-1 mt-2">
+            <a href="beranda.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+            <a href="aset.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+            <a href="/virtual_tour/index.htm" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+            <a href="3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+            <a href="informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+          </div>
         </div>
-        <!-- Navbar Links -->
-        <div class="hidden lg:flex md:items-center md:space-x-1">
-          <a href="beranda.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
-          <a href="aset.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
-          <a href="virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
-          <a href="3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
-          <a href="informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        <div class="hidden lg:block">
+          <p class="text-right text-white font-semibold">Desa Lingsar, <br> Kecamatan Narmada, <br>Provinsi NTB</p>
         </div>
         <!-- Mobile Menu Button (Hamburger Icon) -->
         <div id="mobileMenuBTN" class="lg:hidden">
@@ -51,7 +54,7 @@
       <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
         <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
         <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
-        <a href="virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="/virtual_tour/index.htm" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
         <a href="3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
         <a href="informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
       </div>
@@ -108,17 +111,17 @@
           <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quia.</p>
           <div class="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-2 lg:gap-5 mt-6">
             <div data-aos="fade-right" class="w-full bg-white rounded-md overflow-hidden">
-              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <img src="./assets/img/Nista Mandala.webp" alt="img1" class="w-full h-[200px] lg:h-[300px]" />
               <h2 class="text-black font-bold p-3">Nista Mandala </h2>
               <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Areal pura yang paling di bawah atau paling di luar, Areal ini adalah mencakup bagian taman yang luas di area Pura Lingsar.</p>
             </div>
             <div data-aos="fade-up" class="w-full bg-white rounded-md overflow-hidden">
-              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <img src="./assets/img/Madya Mandala.webp" alt="img1" class="w-full h-[200px] lg:h-[300px]" />
               <h2 class="text-black font-bold p-3">Madya/Pratama Mandala</h2>
               <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Madya Mandala atau dalam pura lingsar disebut pratama mandala adalah areal tengah dari pura lingsar. Areal ini biasanya digunakan sebagai tempat pembinaan, pertemuan dan bahkan bisa digunakan untuk masyarakat sekitar melakukan kegiatan ekonomi seperti jual beli untuk meningkatkan ekonomi msyarakat sekitar secara fleksibel.</p>
             </div>
             <div data-aos="fade-left" class="w-full bg-white rounded-md overflow-hidden">
-              <img src="https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/02/4-6.jpg" alt="img1" class="w-full max-h-[300px]" />
+              <img src="./assets/img/Utama Manadala.webp" alt="img1" class="w-full h-[200px] lg:h-[300px]" />
               <h2 class="text-black font-bold p-3">Utama Mandala</h2>
               <p class="px-3 pb-3 text-sm sm:text-[16px] text-slate-600 text-justify">Areal Utama Mandala merupakan area utama dari Pura lingsar atau tempat berdirinya struktur bangunan utama Puradan tempat paling suci untuk melakukan pemujaan terhadap Ista Dewata atau Tuhan Yang Maha Esa.</p>
             </div>
@@ -140,7 +143,7 @@
         </div>
         <div class="flex justify-between flex-wrap mt-5">
           <div data-aos="fade-right" class="w-full md:w-1/2 sm:px-4">
-            <video src="./assets/vid.mp4" class="w-full md:h-[200px] lg:h-[350px]" controls></video>
+            <iframe class="w-full md:h-[200px] lg:h-[350px]" src="https://www.youtube.com/embed/ljLszZ7SOl4?si=gq7hRIvgp5RYFy5e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <div class="w-full md:w-1/2 sm:px-4">
             <iframe

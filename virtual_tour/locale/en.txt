@@ -1,0 +1,293 @@
+#: locale=en
+
+## Action
+
+### URL
+WebFrame_0DBDF5CD_1D2B_4E8F_41B0_DB3390A44B89.url = https://nusaheritage.id/objekmetadata/warisanberwujud/arca-garuda-wisnu-mata-air-suci
+WebFrame_310645F1_2585_C798_4189_F7877A427062.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-banten
+WebFrame_12D4BBD1_1D29_DA96_41AC_36E7A615AB9D.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-banten
+WebFrame_13C1BF30_1D28_DB96_41AE_94E6275F6EA0.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-bundar
+WebFrame_0B776812_198C_2E49_41B4_C607D221CC7C.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-jajar
+WebFrame_0DAB12EF_1D3B_4A8A_41B5_DDDEF71EA796.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-pawedan
+WebFrame_30EB277C_2583_4488_41B6_475B9BD64459.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-perarianan
+WebFrame_0DEAAE77_1D39_3D9A_41A4_0836B71E40C6.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-perarianan
+WebFrame_05011447_1D79_4DFB_41B6_90C655913783.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-sekenem
+WebFrame_26D072FA_279D_5D88_41B7_03126DF4D12F.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-sekenem
+WebFrame_0DAAF128_1D28_C7B5_41B8_38D9C94395CD.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bale-sekepat
+WebFrame_0D962599_1D28_CE97_418F_7E6DB60F0C19.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bangunan-baru
+WebFrame_0D9683D6_1D29_4A9D_41A1_9B8DA3988F06.url = https://nusaheritage.id/objekmetadata/warisanberwujud/bangunan-betara-bagus-belian
+WebFrame_06FB9AD6_1A8C_E5B7_4197_4E9F41453F31.url = https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-kedua
+WebFrame_043C8B58_1A8C_24BC_41B9_E04BEB0665E3.url = https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-ketiga
+WebFrame_58E8EF26_17C3_4A74_41B0_EFF246CA652E.url = https://nusaheritage.id/objekmetadata/warisanberwujud/candi-bentar-pertama
+WebFrame_1283BC17_1D28_DD9B_4192_692B4AC29F39.url = https://nusaheritage.id/objekmetadata/warisanberwujud/gedong-penyimpanan
+WebFrame_0C3BDECF_1D28_DA8B_41A6_C5573142491C.url = https://nusaheritage.id/objekmetadata/warisanberwujud/katil
+WebFrame_0D6B9ADD_1D27_7A8F_41B7_315678BFB279.url = https://nusaheritage.id/objekmetadata/warisanberwujud/kori-agung-komplek-kemaliq
+WebFrame_0DA316E2_1D2F_CAB5_41A0_ED4308A9BAB2.url = https://nusaheritage.id/objekmetadata/warisanberwujud/kori-agung-komplek-pesiraman
+WebFrame_0D59D49C_1D39_4E8D_41BB_D190954A098D.url = https://nusaheritage.id/objekmetadata/warisanberwujud/kori-agung-komplek-pura-lingsar
+WebFrame_0B7EEDA5_1D79_5EBF_41B9_F102E0945988.url = https://nusaheritage.id/objekmetadata/warisanberwujud/pancuran
+WebFrame_12FB7E43_1D27_5DFB_41A2_BB061F0BD309.url = https://nusaheritage.id/objekmetadata/warisanberwujud/pengyungsungan-betara-gunung-agung
+WebFrame_0D118359_1D3B_4B97_4181_FBA95587150D.url = https://nusaheritage.id/objekmetadata/warisanberwujud/penyungsungan-betara-alit-sakti-di-bukit
+WebFrame_0D4A4F40_1D29_3BF6_41A5_2AF93DFD5BC6.url = https://nusaheritage.id/objekmetadata/warisanberwujud/penyungsungan-betara-gde-lingsar-betara-lingsir
+WebFrame_0D1B0E65_1D3F_7DBF_41AD_6284DA7899FE.url = https://nusaheritage.id/objekmetadata/warisanberwujud/penyungsungan-betara-gunung-rinjani
+WebFrame_0D21051E_1D39_CF8D_41B8_6EC5B0C389F2.url = https://nusaheritage.id/objekmetadata/warisanberwujud/penyungsungan-betara-ngerurah
+WebFrame_0A9A9297_198C_2277_41B6_B41D8718A0C3.url = https://nusaheritage.id/objekmetadata/warisanberwujud/telaga-kembar
+WebFrame_4AA4226B_5EE9_BBD2_41D7_93443020E72E.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.55330038866!2d-73.99492968084243!3d40.75084469078082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9f775f259%3A0x999668d0d7c3fd7d!2s400+5th+Ave%2C+New+York%2C+NY+10018!5e0!3m2!1ses!2sus!4v1467271743182
+WebFrame_22F9EEFF_0C1A_2293_4165_411D4444EFEA.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29683.256050850792!2d116.17837274809638!3d-8.572336941342435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc789bd140a9b%3A0x208f486afe2cda7a!2sPura%20Lingsar!5e1!3m2!1sid!2sid!4v1718036409987!5m2!1sid!2sid
+
+## Hotspot
+
+### Text
+HotspotPanoramaOverlayTextImage_33CFD7E8_2AA9_D476_41AE_0688CE312343.text = Kemaliq Lingsar
+HotspotPanoramaOverlayTextImage_325EF3B4_2A9B_ACDF_4199_F78867A370BB.text = Madya Mandala
+HotspotPanoramaOverlayTextImage_31FEA32F_2AA9_ADCA_41C2_49DCB066D416.text = Nista Mandala (Becingah)
+HotspotPanoramaOverlayTextImage_328E19FC_2AA6_7C4F_41B1_2CE832013653.text = Parking Area
+HotspotPanoramaOverlayTextImage_33D583CA_2AA7_AC4B_41BD_37AEC1F4D642.text = Pura Lingsar (Pura Gaduh)
+HotspotPanoramaOverlayTextImage_3243FF1D_2AAE_75C9_41B8_CEC3502A9C72.text = Telaga beleq
+HotspotPanoramaOverlayTextImage_33D95B03_2AAA_7DBA_4175_676331CECFEC.text = Utama Mandala
+
+## Media
+
+### Audio
+audiores_1EDD36E4_013F_FCFE_4153_01108459CFF0.mp3Url = media/audio_1C64BE29_0139_0F77_4156_E598262D5180_en.mp3
+audiores_1E8014A8_013F_1376_4179_3BDCC3D32F1B.mp3Url = media/audio_1EA90787_01C6_FD3F_4170_19BCD78A75FA_en.mp3
+audiores_3CD271EE_2584_DF88_41B4_CAB2BA0DC7EE.mp3Url = media/audio_3240D6F0_2584_C598_41A6_A6538D22CBE4_en.mp3
+
+### Audio Subtitles
+
+### Floorplan
+
+### Image
+imlevel_0BCE688A_2BBE_FCCB_41B2_5D56ABC814E3.url = media/map_26C90840_278C_CCF8_41BE_3EEB114E31B0_en_0.jpg
+imlevel_0BCE488B_2BBE_FCC9_419D_2388B41E3862.url = media/map_26C90840_278C_CCF8_41BE_3EEB114E31B0_en_1.jpg
+imlevel_0BCE588B_2BBE_FCC9_4180_35F9BB3BC5DC.url = media/map_26C90840_278C_CCF8_41BE_3EEB114E31B0_en_2.jpg
+imlevel_0BCF888B_2BBE_FCC9_41BD_EC714B7E2406.url = media/map_26C90840_278C_CCF8_41BE_3EEB114E31B0_en_3.jpg
+imlevel_0BCF988B_2BBE_FCC9_41BD_46DBAEC23BC0.url = media/map_26C90840_278C_CCF8_41BE_3EEB114E31B0_en_4.jpg
+imlevel_0BCF78CC_2BBE_FC4F_419F_6324D7D67720.url = media/map_26C934C2_278C_C5F8_41B9_653AB12ED0B5_en_0.jpg
+imlevel_0BCCA8CC_2BBE_FC4F_41C4_F31A33BFE7D9.url = media/map_26C934C2_278C_C5F8_41B9_653AB12ED0B5_en_1.jpg
+imlevel_0BCC88CD_2BBE_FC49_41C1_75692DCA46F6.url = media/map_26C934C2_278C_C5F8_41B9_653AB12ED0B5_en_2.jpg
+imlevel_0BCC98CD_2BBE_FC49_4188_1AD109DF7B65.url = media/map_26C934C2_278C_C5F8_41B9_653AB12ED0B5_en_3.jpg
+imlevel_0BCCF8CD_2BBE_FC49_41A3_8162B30FBF84.url = media/map_26C934C2_278C_C5F8_41B9_653AB12ED0B5_en_4.jpg
+imlevel_0BCC58FD_2BBE_FC49_41B1_2355B4D05F12.url = media/map_26C93C17_278C_C498_41C0_C443AF5C7A69_en_0.jpg
+imlevel_0BCD88FD_2BBE_FC49_41C4_C29647DE6211.url = media/map_26C93C17_278C_C498_41C0_C443AF5C7A69_en_1.jpg
+imlevel_0BCD98FD_2BBE_FC49_419D_1623DCB8FB80.url = media/map_26C93C17_278C_C498_41C0_C443AF5C7A69_en_2.jpg
+imlevel_0BCDF8FD_2BBE_FC49_41B2_2041906B7546.url = media/map_26C93C17_278C_C498_41C0_C443AF5C7A69_en_3.jpg
+imlevel_0BCDD8FE_2BBE_FC4B_41C2_12F77266BA8A.url = media/map_26C93C17_278C_C498_41C0_C443AF5C7A69_en_4.jpg
+imlevel_0BC9D846_2BBE_FBBB_41C4_1DFB7DDA307C.url = media/map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91_en_0.jpg
+imlevel_0BC92846_2BBE_FBBB_41C4_4B7C73611A39.url = media/map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91_en_1.jpg
+imlevel_0BC90847_2BBE_FBB9_4197_73FE54F987F2.url = media/map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91_en_2.jpg
+imlevel_0BC96847_2BBE_FBB9_41C5_13B7F13F13ED.url = media/map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91_en_3.jpg
+imlevel_0BC97847_2BBE_FBB9_41BB_AC66A7A1B7E8.url = media/map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91_en_4.jpg
+imlevel_301B818D_2A7A_6CC9_41BF_72AF26C29A6B.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_2ry3vesy_en.png
+imlevel_301D81C6_2A7A_6CBA_41BB_CEDD89F43B4E.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_49wen4do_en.png
+imlevel_301E31E0_2A7A_6C77_41C0_1469251BEA4E.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_527kgi7a_en.png
+imlevel_301F5235_2A7A_6FD9_41AD_C3F7574AD7A2.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_br2q1lt3_en.png
+imlevel_301ED219_2A7A_6FC9_41C4_BB7867B91EAF.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_kl13lhqx_en.png
+imlevel_301D01AD_2A7A_6CCE_41C3_2BC8B967308B.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_m7ho0wau_en.png
+imlevel_301E91FC_2A7A_6C4F_41A7_DF64FC8DE284.url = media/panorama_394881F5_2A9A_AC59_41C4_70E06946023F_HS_wqzta8aq_en.png
+
+### Title
+panorama_F0AE99B1_FDB4_7CAD_41A4_65723754FF40.label = 1
+panorama_F655A854_FDB7_FBEB_41E8_C096889FC3BD.label = 10
+panorama_E5931448_FDCC_8BFB_41E0_5A810436A50A.label = 11…
+panorama_EB8CFCF9_FDCC_F49D_41ED_1674428EE471.label = 12.
+panorama_EB8D3CB1_FDCC_94AD_41EA_A1645E5C2EB6.label = 13
+panorama_EB8D64B8_FDCC_949B_41E4_5B913DD45DC1.label = 13(1)
+panorama_EB8DD4BB_FDCC_B49D_41DB_56A0368BE70C.label = 14
+panorama_EB8D9C3F_FDCC_BB94_41D6_4D5B1CFC8A39.label = 15
+panorama_EB8DF431_FDCC_8BAD_41E7_69D83AF7037D.label = 16
+panorama_EB8DCC0C_FDCC_9B7B_41C7_A321E00E76EB.label = 17.
+panorama_EB8DF3DB_FDCC_8C9D_41DE_E8F7DE069812.label = 18.
+panorama_EB8DBB2C_FDCC_7DBB_41E9_C756224FA18F.label = 19
+panorama_F653D14A_FDB7_8DFF_41ED_54073B5F8149.label = 2
+panorama_EB8A2299_FDCB_8C9D_41CE_E00A0679EAAE.label = 20
+panorama_EB8A4A68_FDCB_9FBB_41D5_28B5D7985F8A.label = 21
+panorama_EB89F29D_FDCB_8C95_41B3_3872B681DE57.label = 22
+panorama_EB8A7A55_FDCB_BF95_41D7_DA9CEEAE9930.label = 23
+panorama_EB8A2246_FDCB_8FF7_41BE_6724543E5A97.label = 24
+panorama_EB8A79DB_FDCB_9C9D_41D2_013CC4789890.label = 25
+panorama_EB8A61A3_FDCB_8CAD_41EF_57BC74BFB348.label = 26
+panorama_EB8A4938_FDCB_FD9B_41EF_45647A8F6775.label = 27
+panorama_EB8A014B_FDCB_8DFD_41BE_D35432C3624F.label = 29
+panorama_F655682F_FDB7_9BB5_41E9_5D8586E82608.label = 3
+panorama_E76254F3_FE4C_B4AD_41E7_942FA9394ADD.label = 30
+panorama_E7A75BE7_FE4C_BCB5_41EF_0EA4C9A9593B.label = 31
+panorama_E763040D_FE4C_8B75_41B9_26A9AC678338.label = 32
+panorama_E7637CB7_FE4C_9495_41CE_60125F7858FA.label = 33
+panorama_E762F513_FE4C_F56C_41C2_6CE9D3E88250.label = 34
+panorama_E762FD20_FE4C_F5AB_41EC_19301E25DF6E.label = 35
+panorama_E762B500_FE4C_956B_41BC_1D94B614865E.label = 36
+panorama_E762ECDF_FE4C_9495_41E1_FA41C96FFC04.label = 37
+panorama_E7628CF3_FE4C_B4AE_41C9_454F0E0C5315.label = 38
+panorama_E7627518_FE4C_959B_41E2_9BCE7CA866E0.label = 39
+panorama_F6558EFE_FDB7_9497_41CC_CC51467A6906.label = 4
+panorama_E762BCEA_FE4C_94BF_41E9_435B8D42C8FA.label = 40
+panorama_E7628CF2_FE4C_74AF_41D0_FCC55FDB40E4.label = 41
+panorama_F65545CA_FDB7_B4FF_41DE_1F34366F5DE9.label = 5
+panorama_F6554CB9_FDB7_B49D_41EC_E2AB89905BB0.label = 6
+panorama_F6558388_FDB7_8D7B_41E0_72A2E85D91CF.label = 7
+panorama_F6551A7E_FDB7_9F97_41D0_91644D1566CD.label = 8
+panorama_F6559166_FDB7_8DB7_41E8_8B19F03A3ADE.label = 9
+map_26C90840_278C_CCF8_41BE_3EEB114E31B0.label = Madya Mandala_page-0001
+album_19425FFE_26E0_1BA2_4196_519A9934EE2C_1.label = Madya Mandala_page-0001
+map_26C934C2_278C_C5F8_41B9_653AB12ED0B5.label = Nista Mandala_page-0001
+album_19425FFE_26E0_1BA2_4196_519A9934EE2C_2.label = Nista Mandala_page-0001
+album_1B076C83_01CB_13A5_4171_98054C820F17.label = Photo Album Screenshot 2024-06-09 224310
+album_19425FFE_26E0_1BA2_4196_519A9934EE2C.label = Photo Album iki4_page-0001
+album_19425FFE_26E0_1BA2_4196_519A9934EE2C_3.label = Utama Mandala_page-0001
+map_26C93C17_278C_C498_41C0_C443AF5C7A69.label = Utama Mandala_page-0001
+panorama_394881F5_2A9A_AC59_41C4_70E06946023F.label = djipanroama
+album_19425FFE_26E0_1BA2_4196_519A9934EE2C_0.label = iki4_page-0001
+map_3AE9B8D2_1743_362D_41A1_1DB20AA7FE91.label = iki4_page-0001
+
+## Skin
+
+### Button
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC_mobile.pressedLabel = AMENITIES >
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC_mobile.label = AMENITIES >
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC.label = Areal Pura Lingsar
+Button_2A2DA53B_310E_001C_41C7_8885E712C50B_mobile.label = BACK
+Button_15A15DDC_31FA_0014_41A4_CE4305FEC7D1_mobile.label = BACK
+Button_175A5214_31FA_0014_4198_930DF49BADD9_mobile.label = BACK
+Button_17EA82B7_3106_0014_41C2_C9B0D9E6F22C_mobile.label = BACK
+Button_168CA310_3106_01EC_41C7_72CE0522951A_mobile.label = BACK
+Button_1757CD7D_31FA_0015_4143_A9E37B16A50B_mobile.label = BACK
+Button_2A2C553C_310E_0014_41C4_86393D0ADCC7_mobile.label = Bar
+Button_15EF2665_3106_0035_41AE_9BACA1A48D02_mobile.label = Chill Out
+Button_1203FDB8_3106_001C_41B6_C9BE8EDD0DA9_mobile.label = Garden
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC.pressedLabel = Inserdt Text
+Button_4C0CCCF8_5EE8_88BE_41D7_AE304B421CBB.label = LOREM IPSUM
+Button_2A2DE53B_310E_001C_41BB_C7AB6950A4DD_mobile.label = Lobby
+Button_0A054365_2D09_CB9F_4145_8C365B373D19.label = Location
+Button_17566D7D_31FA_0015_41AD_98D7C60C694F_mobile.label = Lorem Ipsum
+Button_17598215_31FA_0014_41AC_1166AB319171_mobile.label = Lorem Ipsum
+Button_1759F215_31FA_0014_41BD_BBFA5FB0D882_mobile.label = Lorem Ipsum
+Button_1756DD7D_31FA_0015_41A5_988B67FCF8B7_mobile.label = Lorem Ipsum
+Button_168D9311_3106_01EC_41A8_3BD8769525D6_mobile.label = Lorem Ipsum
+Button_168DA310_3106_01EC_41BE_DF88732C2A28_mobile.label = Lorem Ipsum
+Button_1756FD7D_31FA_0015_41C7_DA2AAC2AAAEC_mobile.label = Lorem Ipsum
+Button_1203FDB8_3106_001C_41B6_C9BE8EDD0DA9_mobile.pressedLabel = Lorem Ipsum
+Button_13D4FC1E_310A_0017_41BA_DDA6D071C1BA_mobile.label = Lorem Ipsum
+Button_168DB310_3106_01EC_41B2_3511AA5E40E1_mobile.label = Lorem Ipsum
+Button_15A10DDC_31FA_0014_4185_021C898E177D_mobile.label = Lorem Ipsum
+Button_15A13DDC_31FA_0014_41C5_41AE80876834_mobile.label = Lorem Ipsum
+Button_15A12DDC_31FA_0014_416B_ED845741AE5F_mobile.label = Lorem Ipsum
+Button_15A12DDC_31FA_0014_416B_ED845741AE5F_mobile.pressedLabel = Lorem Ipsum
+Button_159EDDDC_31FA_0014_419A_61C18E43FE01_mobile.label = Lorem Ipsum
+Button_159ECDDC_31FA_0014_41B9_2D5AB1021813_mobile.label = Lorem Ipsum
+Button_1759F215_31FA_0014_41BD_BBFA5FB0D882_mobile.pressedLabel = Lorem Ipsum
+Button_159EEDDC_31FA_0014_41B6_22A86B2D2FEB_mobile.label = Lorem Ipsum
+Button_159E9DDC_31FA_0015_41B6_CB1D433C7673_mobile.label = Lorem Ipsum
+Button_159E8DDD_31FA_0014_41C5_F18F441AF371_mobile.label = Lorem Ipsum
+Button_159EBDDD_31FA_0014_41C8_935504B30727_mobile.label = Lorem Ipsum
+Button_168DD310_3106_01EC_4190_7815FA70349E_mobile.label = Lorem Ipsum
+Button_1757AD7D_31FA_0015_41C7_FB79F56FA149_mobile.label = Lorem Ipsum
+Button_17565D7D_31FA_0015_4193_78BBCB2DC70F_mobile.label = Lorem Ipsum
+Button_17564D7D_31FA_0015_41B8_A9191CD56C52_mobile.label = Lorem Ipsum
+Button_17564D7D_31FA_0015_41B8_A9191CD56C52_mobile.pressedLabel = Lorem Ipsum
+Button_17567D7D_31FA_0015_41C2_1E0D0AF05C7A_mobile.label = Lorem Ipsum
+Button_17596215_31FA_0014_41C6_A42670770708_mobile.label = Lorem Ipsum
+Button_17597215_31FA_0014_41C0_9BEE1DE4D7F6_mobile.label = Lorem Ipsum
+Button_17560D7D_31FA_0015_41C4_7F0EC7540CC2_mobile.label = Lorem Ipsum
+Button_17562D7D_31FA_0015_41A3_96B282B30DBA_mobile.label = Lorem Ipsum
+Button_168D5310_3106_01EC_41B5_96D9387401B8_mobile.label = Lorem Ipsum
+Button_168D6310_3106_01EC_41B8_A0B6BE627547_mobile.label = Lorem Ipsum
+Button_168D0310_3106_01EC_41A1_FA8FC42E6FF3_mobile.label = Lorem Ipsum
+Button_1759A215_31FA_0014_41C7_F6B1044E5BB3_mobile.label = Lorem Ipsum
+Button_168D3310_3106_01EC_41AC_5D524E4677A5_mobile.label = Lorem Ipsum
+Button_168D2310_3106_01EC_41B8_9D7D1B2B55FA_mobile.label = Lorem Ipsum
+Button_17EAB2B7_3106_0014_41A7_209417AD3E9A_mobile.label = Lorem Ipsum
+Button_1759D215_31FA_0014_41AD_B6C5744A0B97_mobile.label = Lorem Ipsum
+Button_17593215_31FA_0014_41C0_42BAFB0080F0_mobile.label = Lorem Ipsum
+Button_17EAE2B7_3106_0014_41C7_DB7FC43AAEE0_mobile.label = Lorem Ipsum
+Button_17590215_31FA_0014_41C1_2B2D012DCC76_mobile.label = Lorem Ipsum
+Button_17EB92B7_3106_0014_41B2_34A3E3F63779_mobile.label = Lorem Ipsum
+Button_17EAE2B7_3106_0014_41C7_DB7FC43AAEE0_mobile.pressedLabel = Lorem Ipsum
+Button_1758B215_31FA_0014_41BC_C4EAC2A9544B_mobile.label = Lorem Ipsum
+Button_168D3310_3106_01EC_41AC_5D524E4677A5_mobile.pressedLabel = Lorem Ipsum
+Button_17EB32B7_3106_0014_41C8_467BF6AECBE8_mobile.label = Lorem Ipsum
+Button_17EAD2B7_3106_0014_41C0_0B5453B4841D_mobile.label = Lorem Ipsum
+Button_17EB72B7_3106_0014_41B9_61857077BF4A_mobile.label = Lorem Ipsum
+Button_17EB62B7_3106_0014_41C5_43B38271B353_mobile.label = Lorem Ipsum
+Button_17EB02B7_3106_0014_41AF_05D9AC36B189_mobile.label = Lorem Ipsum
+Button_17EB52B7_3106_0014_419C_439E593AEC43_mobile.label = Lorem Ipsum
+Button_17561D7D_31FA_0015_41B5_BD72FAC26B8B_mobile.label = Lorem ipsum
+Button_17592215_31FA_0014_41B2_AA3B5CC318B8_mobile.label = Lorem ipsum
+Button_159EFDDC_31FA_0014_41C6_9CF7032F84E0_mobile.label = Lorem ipsum
+Button_17EB42B7_3106_0014_41B0_CE70CBDDF438_mobile.label = Lorem ipsum
+Button_168DE310_3106_01EC_4192_6A9F468A0ADE_mobile.label = Lorem ipsum
+Button_2A2D853B_310E_001C_41C4_1C2E2BAFC35D_mobile.label = Main Entrance
+Button_2A2C053B_310E_001C_41A2_583DE489828C_mobile.label = Meeting Area 1
+Button_2A2C753B_310E_001C_41C4_B649CCC20E3D_mobile.label = Meeting Area 2
+Button_1D2C4FDF_2D7F_BAAB_4198_FBD1E9E469FF.label = Panorama List
+Button_0AEB5577_2D08_CE7B_41B6_192923248F4E_mobile.label = RECEPTION >
+Button_1D0C50DE_2D07_C6AD_41C1_CF4547A6CFAB_mobile.label = RESTAURANTS >
+Button_0A054365_2D09_CB9F_4145_8C365B373D19_mobile.label = ROOMS >
+Button_2A2C253B_310E_001C_41B6_D3A7F4F68C3E_mobile.pressedLabel = Reception
+Button_2A2C253B_310E_001C_41B6_D3A7F4F68C3E_mobile.label = Reception
+Button_1D2C4FDF_2D7F_BAAB_4198_FBD1E9E469FF_mobile.label = SPORTS AREA >
+Button_0399826A_2D79_4594_41BA_934A50D0E6B4_mobile.label = SWIMMING POOL >
+Button_15F5A318_3106_001C_41C5_9AA2EF2184CF_mobile.label = Terrace
+Button_0AEB5577_2D08_CE7B_41B6_192923248F4E.label = Tour Information
+
+### Image
+Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19.url = skin/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_en.png
+Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_mobile.url = skin/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_mobile_en.jpg
+Image_043C3B59_1A8C_24BC_417F_51188D830362.url = skin/Image_043C3B59_1A8C_24BC_417F_51188D830362_en.jpg
+Image_0501C448_1D79_4DF6_4185_DDD01D54C008.url = skin/Image_0501C448_1D79_4DF6_4185_DDD01D54C008_en.jpg
+Image_062A182F_1140_E20B_41B0_9CB8FFD6AA5A.url = skin/Image_062A182F_1140_E20B_41B0_9CB8FFD6AA5A_en.png
+Image_06FC4AD7_1A8C_E5B4_4190_AF68994E8C53.url = skin/Image_06FC4AD7_1A8C_E5B4_4190_AF68994E8C53_en.jpg
+Image_0A9B9297_198C_2277_41B6_976B5A07F6DB.url = skin/Image_0A9B9297_198C_2277_41B6_976B5A07F6DB_en.jpg
+Image_0B763812_198C_2E49_41B7_7253D40037F9.url = skin/Image_0B763812_198C_2E49_41B7_7253D40037F9_en.jpg
+Image_0B7F4DA5_1D79_5EBF_41A7_44D8F5CF6692.url = skin/Image_0B7F4DA5_1D79_5EBF_41A7_44D8F5CF6692_en.jpg
+Image_0C3AAECF_1D28_DA8B_41A2_7274CAAB02F9.url = skin/Image_0C3AAECF_1D28_DA8B_41A2_7274CAAB02F9_en.jpg
+Image_0D100359_1D3B_4B97_41B3_1BF5C7BAB7C9.url = skin/Image_0D100359_1D3B_4B97_41B3_1BF5C7BAB7C9_en.jpg
+Image_0D1B8E65_1D3F_7DBF_41AB_7FC40A9611C8.url = skin/Image_0D1B8E65_1D3F_7DBF_41AB_7FC40A9611C8_en.jpg
+Image_0D26951F_1D39_CF8B_4194_7B6675DCD8DA.url = skin/Image_0D26951F_1D39_CF8B_4194_7B6675DCD8DA_en.jpg
+Image_0D4AAF40_1D29_3BF6_41A3_0758C9712A6D.url = skin/Image_0D4AAF40_1D29_3BF6_41A3_0758C9712A6D_en.jpg
+Image_0D59249D_1D39_4E8F_4190_767A2300D680.url = skin/Image_0D59249D_1D39_4E8F_4190_767A2300D680_en.jpg
+Image_0D6ADADD_1D27_7A8F_41B3_6442EBFB0E87.url = skin/Image_0D6ADADD_1D27_7A8F_41B3_6442EBFB0E87_en.jpg
+Image_0D96C59A_1D28_CE95_418F_ACC0A9FA81DA.url = skin/Image_0D96C59A_1D28_CE95_418F_ACC0A9FA81DA_en.jpg
+Image_0D97D3D7_1D29_4A9B_41AC_D3FF07F17869.url = skin/Image_0D97D3D7_1D29_4A9B_41AC_D3FF07F17869_en.jpg
+Image_0DA2D6E3_1D2F_CABB_41B3_3EF1E1BD27A1.url = skin/Image_0DA2D6E3_1D2F_CABB_41B3_3EF1E1BD27A1_en.jpg
+Image_0DAA42EF_1D3B_4A8A_4180_42EB9176A9E6.url = skin/Image_0DAA42EF_1D3B_4A8A_4180_42EB9176A9E6_en.jpg
+Image_0DABA128_1D28_C7B5_41B8_4871D0B2D424.url = skin/Image_0DABA128_1D28_C7B5_41B8_4871D0B2D424_en.jpg
+Image_0DBC35CD_1D2B_4E8F_41B7_5010F48B106D.url = skin/Image_0DBC35CD_1D2B_4E8F_41B7_5010F48B106D_en.jpg
+Image_0DEA6E78_1D39_3D96_41AF_55A176B8CEE0.url = skin/Image_0DEA6E78_1D39_3D96_41AF_55A176B8CEE0_en.jpg
+Image_1283DC17_1D28_DD9B_41AA_02573389488C.url = skin/Image_1283DC17_1D28_DD9B_41AA_02573389488C_en.jpg
+Image_12D40BD2_1D29_DA9A_416B_7CF044B32B0F.url = skin/Image_12D40BD2_1D29_DA9A_416B_7CF044B32B0F_en.jpg
+Image_12FA6E44_1D27_5DFD_41B8_FA13951C029B.url = skin/Image_12FA6E44_1D27_5DFD_41B8_FA13951C029B_en.jpg
+Image_13C24F32_1D28_DB9A_41A1_81C6FA62F0A4.url = skin/Image_13C24F32_1D28_DB9A_41A1_81C6FA62F0A4_en.jpg
+Image_1A4CBD78_0330_271F_4183_305BFE91F2D6.url = skin/Image_1A4CBD78_0330_271F_4183_305BFE91F2D6_en.png
+Image_1A5F2B90_0330_23EF_4187_FE0B4500C154.url = skin/Image_1A5F2B90_0330_23EF_4187_FE0B4500C154_en.png
+Image_1E19C23C_57F1_802D_41D1_9DC72DB5C1E1.url = skin/Image_1E19C23C_57F1_802D_41D1_9DC72DB5C1E1_en.png
+Image_23B8B29B_0370_5D11_415D_B620C1C511C4.url = skin/Image_23B8B29B_0370_5D11_415D_B620C1C511C4_en.png
+Image_26D072FB_279D_5D88_4181_89B35F5FCFDF.url = skin/Image_26D072FB_279D_5D88_4181_89B35F5FCFDF_en.jpg
+Image_30EA877C_2583_4488_4192_A1E747C88F63.url = skin/Image_30EA877C_2583_4488_4192_A1E747C88F63_en.jpg
+Image_310725F1_2585_C798_41B4_B6D66D0B004E.url = skin/Image_310725F1_2585_C798_41B4_B6D66D0B004E_en.jpg
+Image_343767C9_2A66_D449_41B5_AD3F7746F83D.url = skin/Image_343767C9_2A66_D449_41B5_AD3F7746F83D_en.png
+Image_4AE43CDD_5EE8_88F7_41B0_426EA5B4F51F.url = skin/Image_4AE43CDD_5EE8_88F7_41B0_426EA5B4F51F_en.jpg
+Image_4AE4FCDD_5EE8_88F7_41AE_7B34348A877D.url = skin/Image_4AE4FCDD_5EE8_88F7_41AE_7B34348A877D_en.jpg
+Image_4C0C0CF8_5EE8_88BE_41D1_9925B6B656C3.url = skin/Image_4C0C0CF8_5EE8_88BE_41D1_9925B6B656C3_en.jpg
+Image_6AE4B840_2960_04E6_41AD_F9D18ECD4836.url = skin/Image_6AE4B840_2960_04E6_41AD_F9D18ECD4836_en.png
+Image_6FDB599F_2960_0798_41C1_6D7C36EE0633.url = skin/Image_6FDB599F_2960_0798_41C1_6D7C36EE0633_en.png
+
+### Label
+Label_22BB32F4_3075_D173_4191_C8B45B85DEB8_mobile.text = DOLOR SIT AMET, CONSECTETUR
+Label_22BB32F4_3075_D173_4191_C8B45B85DEB8.text = DOLOR SIT AMET, CONSECTETUR
+Label_22BB22F4_3075_D173_41BB_3ACDC6CCCC83_mobile.text = LOREM IPSUM
+Label_22BB22F4_3075_D173_41BB_3ACDC6CCCC83.text = LOREM IPSUM
+Label_274CB64C_1740_FA34_41B3_0AD8410A8E74.text = Panorama List
+Label_1A53AEF1_0350_2511_4188_77FF73A9AB3C.text = Support By :
+
+### Multiline Text
+HTMLText_4AE4BCDD_5EE8_88F7_41A5_FD2F970F1FDC.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:4.3100000000000005vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:4.31vmin;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV></div>
+HTMLText_4C0C3CF8_5EE8_88BE_41D5_8EEACF3D5601.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:10.42vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:10.42vmin;font-family:'Oswald';"><B><I>LOREM IPSUM</I></B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:10.42vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:10.42vmin;font-family:'Oswald';"><B><I>DOLOR SIT AME</I></B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.830000000000001vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#04a3e1;font-size:5.83vmin;font-family:'Oswald';"><B>CONSECTETUR ADIPISCING ELIT. MORBI BIBENDUM PHARETRA LOREM, ACCUMSAN SAN NULLA.</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.19vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.69vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.19vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.69vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;">Integer gravida dui quis euismod placerat. Maecenas quis accumsan ipsum. Aliquam gravida velit at dolor mollis, quis luctus mauris vulputate. Proin condimentum id nunc sed sollicitudin.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.19vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.69vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:5.830000000000001vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.83vmin;font-family:'Oswald';"><B><I>DONEC FEUGIAT:</I></B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:4.3100000000000005vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:4.31vmin;"> </SPAN><SPAN STYLE="font-size:3.19vmin;">• Nisl nec mi sollicitudin facilisis </SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;"> • Nam sed faucibus est.</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;"> • Ut eget lorem sed leo.</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;"> • Sollicitudin tempor sit amet non urna. </SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.1900000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.19vmin;"> • Aliquam feugiat mauris sit amet.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.19vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.69vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:5.830000000000001vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.83vmin;font-family:'Oswald';"><B><I>LOREM IPSUM:</I></B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.830000000000001vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#04a3e1;font-size:5.83vmin;font-family:'Oswald';"><B>$150,000</B></SPAN></SPAN></DIV></div>
+HTMLText_4AE4DCDD_5EE8_88F7_41D1_3A00BC21E997.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:10.000000000000004vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#04a3e1;font-size:10vmin;font-family:'Oswald';"><B><I>JOHN DOE</I></B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.560000000000001vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.56vmin;font-family:'Oswald';"><I>Licensed Real Estate Salesperson</I></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:4.31vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.25vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:4.3100000000000005vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:4.31vmin;font-family:'Oswald';"><I>Tlf.: +11 111 111 111</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:4.3100000000000005vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:4.31vmin;font-family:'Oswald';"><I>jhondoe@realestate.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:4.3100000000000005vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:4.31vmin;font-family:'Oswald';"><I>www.loremipsum.com</I></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.25vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.25vmin;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:1.25vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.25vmin;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_29DD1615_3597_79DF_41C4_7593739E5260_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:7px;font-family:'Oswald Regular';"><I>Company Name</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:7px;font-family:'Oswald Regular';"><I>www.loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:7px;font-family:'Oswald Regular';"><I>info@loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:7px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:7px;font-family:'Oswald Regular';"><I>Tlf.: +11 111 111 111</I></SPAN></SPAN></DIV></div>
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Pura Lingsarr

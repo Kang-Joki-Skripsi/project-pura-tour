@@ -677,12 +677,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mr-2 {
@@ -709,8 +718,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -769,8 +778,16 @@ video {
   height: 100vh;
 }
 
-.h-\[350px\] {
-  height: 350px;
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[2\] {
+  height: 2;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .max-h-\[250px\] {
@@ -787,6 +804,10 @@ video {
 
 .max-h-\[400px\] {
   max-height: 400px;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
 }
 
 .w-1\/2 {
@@ -821,8 +842,28 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .max-w-\[60px\] {
   max-width: 60px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[\] {
+  max-width: ;
 }
 
 .-translate-y-1\/2 {
@@ -862,6 +903,10 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -934,6 +979,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-hidden {
@@ -1092,6 +1141,10 @@ video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1137,6 +1190,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1151,6 +1209,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-justify {
@@ -1438,8 +1500,12 @@ video {
     height: 200px;
   }
 
-  .md\:h-\[\] {
-    height: ;
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:h-\[250px\] {
+    height: 250px;
   }
 
   .md\:w-1\/2 {
@@ -1452,6 +1518,10 @@ video {
 
   .md\:w-\[200px\] {
     width: 200px;
+  }
+
+  .md\:max-w-\[300px\] {
+    max-width: 300px;
   }
 
   .md\:grid-cols-3 {
@@ -1539,6 +1609,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1561,6 +1635,10 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-\[300px\] {
+    height: 300px;
   }
 
   .lg\:w-1\/3 {

@@ -21,24 +21,27 @@
 
   <body class="bg-slate-200">
     <!-- Navbar -->
-    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 sticky top-0">
+    <nav id="navbar" class="bg-primary px-4 sm:px-10 py-4 top-0">
       <div class="3xl:container flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
+        <div>
+          <!-- Logo -->
           <a href="beranda.html" class="text-white text-xl font-bold flex items-center space-x-2">
             <img src="../assets/img/logo.png" alt="logo" class="max-w-[60px]">
             <span>
               Virtual Tour Pura Lingsar
             </span>
           </a>
+          <!-- Navbar Links -->
+          <div class="hidden lg:flex md:items-center md:space-x-1 mt-2">
+            <a href="beranda.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
+            <a href="aset.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
+            <a href="/virtual_tour/index.htm" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
+            <a href="3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
+            <a href="informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+          </div>
         </div>
-        <!-- Navbar Links -->
-        <div class="hidden lg:flex md:items-center md:space-x-1">
-          <a href="../beranda.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Beranda</a>
-          <a href="../aset.html" class="text-white active hover:bg-white hover:text-black py-1 px-4 rounded-lg">Aset</a>
-          <a href="../virtual_tour.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Virtual Tour 360 &deg;</a>
-          <a href="../3d_explorer.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">3D Explorer</a>
-          <a href=../informasi.html" class="text-white hover:bg-white hover:text-black py-1 px-4 rounded-lg">Informasi</a>
+        <div class="hidden lg:block">
+          <p class="text-right text-white font-semibold">Desa Lingsar, <br> Kecamatan Narmada, <br>Provinsi NTB</p>
         </div>
         <!-- Mobile Menu Button (Hamburger Icon) -->
         <div id="mobileMenuBTN" class="lg:hidden">
@@ -51,11 +54,11 @@
       </div>
       <!-- Mobile Menu (Hidden by Default) -->
       <div id="mobileMenu" class="hidden lg:hidden bg-primary py-4">
-        <a href="../beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
-        <a href="../aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
-        <a href="../virtual_tour.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
-        <a href="../3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
-        <a href="../informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
+        <a href="beranda.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Beranda</a>
+        <a href="aset.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Aset</a>
+        <a href="/virtual_tour/index.htm" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Virtual Tour 360 &deg;</a>
+        <a href="3d_explorer.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">3D Explorer</a>
+        <a href="informasi.html" class="block text-white py-2 px-4 hover:bg-white hover:text-black rounded-full">Informasi</a>
       </div>
     </nav>
 
