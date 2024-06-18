@@ -17,9 +17,6 @@
 	<link rel="preload" href="{{asset('media/panorama_9F413F87_9433_4C63_41DC_3C1665025BD9_0/b/2/0_0.jpg?v=1718665062620')}}" as="image"/>
 	<meta name="description" content="Virtual Tour"/>
 	<meta name="theme-color" content="#FFFFFF"/>
-    <script>
-        var script_general = "{{asset('script_general.js?v=1718665062620')}}"
-    </script>
     <script src="{{asset('script.js?v=1718665062620')}}"></script>
     <style type="text/css">
         html, body { height:100%; width:100%; height:100vh; width:100vw; margin:0; padding:0; overflow:hidden; }
