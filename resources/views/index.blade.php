@@ -15,7 +15,7 @@
         </p>
       </div>
       <div class="py-3">
-        <img class="float-left w-full lg:w-1/2 mr-4 mb-4" src="{{asset('img/beranda.webp')}}" alt="Pura Dalem Sejati" data-aos="fade-right" data-aos-duration="1000">
+        <img class="float-left w-full lg:w-1/2 mr-4 mb-4" src="{{asset('/main_asset/img/beranda.webp')}}" alt="Pura Dalem Sejati" data-aos="fade-right" data-aos-duration="1000">
         
         <p class="text-justify text-sm lg:text-[16px] font-open-sans leading-normal">Seteleh Abiseka Ratu beliau bergelar Cokorda Sakti Blambangan, diceritakan sekarang tentang daerah Sibang  yang  terletak di sisi timur aliran sungai Ayung sudah sejak sedia kala di huni oleh penduduk terutama ( dibagian selatan ) yaitu Serijati dan Cabe sedangkan di bagian utara hingga daerah mambal masih merupakan hutan belantara. Dinamakan Saibang konon pada Zaman dahulu seputar sisi timur Desa ditanami pohon Pucuk Baang ( Kembang sepatu merah ). Sehingga setiap waktu dari jauh selalu kelihatan merah menyala sehingga daerah itu dijuluki Saibaang ( selalu merah ). Tatkala kerajaan Mengwi , dibawah cokorda sakti Blambangan mengembangkan wilayahnnya sudah tentu Anglurah Sibang Serijati ikut menyatakan takluk kepada beliau bersama – sama dengan Anglurah Pacung. ( Payangan ) , Yeh Tengah, Mambal, Blahbatuh dan lainnya lagi. Untuk mengawasi dan memerintahkan daerah Saibang Serijati diserahkan kepada salah seoarang Putra beliau yang bernama I Gusti Agung Made Kamasan.
         </p>
@@ -25,7 +25,7 @@
         </p>
       </div>
       <div class="py-3">
-        <img class="w-full lg:w-1/2 float-right ml-4 mb-4" src="{{asset('img/beranda1.webp')}}" alt="Pura Dalem Sejati" data-aos="fade-left" data-aos-duration="1000">
+        <img class="w-full lg:w-1/2 float-right ml-4 mb-4" src="{{asset('/main_asset/img/beranda1.webp')}}" alt="Pura Dalem Sejati" data-aos="fade-left" data-aos-duration="1000">
         
         <p class="text-justify text-sm lg:text-[16px] font-open-sans leading-normal">Tanpa digubris oleh Adinda Raja  beliau Raja Mengwi , maka perjalanan terus dilanjutkan menuju daerah Tampak Siring. Tidak beberapa lama rombongan beliau tersebut pindah kedaerah kerajaan Badung dan oleh Badung atau Raja Badung diberikan tempat tinggal di Ubung. Cukup lama beliau menetap di sana disungsung oleh para Ampel Gading Akhirnya pada suatu ketika dibuatlah layang – layang yang  besar dan pada ekor layangan itu diikatkan sepucuk surat untuk adinda beliau Raja Mengwi dengan maksud bahwa beliau akan kembali lagi ke daerah Mengwi yaitu daerah Saibang Serijati, hanya beliau minta agar diberikan tambahan daerah lagi yaitu, daerah Sempidi, Lukluk, Perang dan Anggungan. Tambahan pula agar beliau tidak kehilangan, maka diharapkan agar daerah-daerah tersebut seakan-akan jatuh melalui suatu peperangan.
         </p>

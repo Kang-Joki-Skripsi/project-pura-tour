@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIBANG GEDE | {{$title}}</title>
     <!-- Include the Tailwind CSS CDN -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
+    <link href="{{asset('/main_asset/css/app.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{asset('/main_asset/img/logo.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{asset('vendor/aos/aos.css')}}">
-    <script src="{{asset('vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('js/app.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('/main_asset/vendor/aos/aos.css')}}">
+    <script src="{{asset('/main_asset/vendor/aos/aos.js')}}"></script>
+    <script src="{{asset('/main_asset/js/app.js')}}"></script>
     <style>
         /* Untuk browser WebKit (Chrome, Safari) */
         ::-webkit-scrollbar {
@@ -38,7 +38,7 @@
             <!-- Logo -->
             <div class="flex items-center">
                 <a href="{{route('beranda')}}" class="text-white text-xl">
-                    <img src="{{asset('img/logo-brand.png')}}" alt="Logo" class="w-[200px] xl:w-[250px]">
+                    <img src="{{asset('/main_asset/img/logo-brand.png')}}" alt="Logo" class="w-[200px] xl:w-[250px]">
                 </a>
             </div>
             <!-- Navbar Links -->

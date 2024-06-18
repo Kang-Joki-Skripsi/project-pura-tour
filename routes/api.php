@@ -22,9 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/galery', function() {
     // ini akan mencari pada folder public
-    $madya_mandala = public_path('img/galery/madya_mandala');
-    $nista_mandala = public_path('img/galery/nista_mandala');
-    $utama_mandala = public_path('img/galery/utama_mandala');
+    $madya_mandala = public_path('main_asset/img/galery/madya_mandala');
+    $nista_mandala = public_path('main_asset/img/galery/nista_mandala');
+    $utama_mandala = public_path('main_asset/img/galery/utama_mandala');
     $filesUtamaMandala = File::files($utama_mandala);
     $filesMadyaMandala = File::files($madya_mandala);
     $filesNistaMandala = File::files($nista_mandala);
@@ -36,13 +36,13 @@ Route::get('/galery', function() {
     ];
 
     foreach ($filesUtamaMandala as $file) {
-        $files["utama_mandala"][] = asset('img/galery/utama_mandala') . "/" . $file->getFilename();
+        $files["utama_mandala"][] = asset('main_asset/img/galery/utama_mandala') . "/" . $file->getFilename();
     }
     foreach ($filesMadyaMandala as $file) {
-        $files["madya_mandala"][] = asset('img/galery/madya_mandala') . "/" . $file->getFilename();
+        $files["madya_mandala"][] = asset('main_asset/img/galery/madya_mandala') . "/" . $file->getFilename();
     }
     foreach ($filesNistaMandala as $file) {
-        $files["nista_mandala"][] = asset('img/galery/nista_mandala') . "/" . $file->getFilename();
+        $files["nista_mandala"][] = asset('main_asset/img/galery/nista_mandala') . "/" . $file->getFilename();
     }
 
     return response()->json($files);
@@ -57,7 +57,7 @@ Route::get('/videos', function() {
     $files = [];
 
     foreach ($videos3D as $video) {
-        $files[] = asset('img/3D') . "/" . $video->getFilename();
+        $files[] = asset('/main_asset/img/3D') . "/" . $video->getFilename();
     }
 
     return response()->json($files);

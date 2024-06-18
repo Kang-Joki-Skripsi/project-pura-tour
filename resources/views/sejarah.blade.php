@@ -4,7 +4,7 @@
     <div class="container">
         <div class="flex flex-wrap lg:flex-nowrap lg:space-x-5 justify-between items-start">
             <div class="w-full lg:w-1/2">
-                <img class="w-full h-full" src="{{asset('img/pura1.webp')}}" alt="Pura Dalem Sejati">
+                <img class="w-full h-full" src="{{asset('/main_asset/img/pura1.webp')}}" alt="Pura Dalem Sejati">
             </div>
             <div id="map" class="w-full lg:w-1/2 mt-5 lg:mt-0">
                 <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold">Pura Dalem Srijati</h1>
@@ -21,7 +21,7 @@
         </div>
         <div class="flex flex-wrap lg:flex-nowrap lg:space-x-5 justify-between items-start mt-4 lg:mt-16">
             <div class="w-full lg:w-1/2">
-                <img class="w-full h-full" src="{{asset('img/pura.webp')}}" alt="Pura Dalem Sejati">
+                <img class="w-full h-full" src="{{asset('/main_asset/img/pura.webp')}}" alt="Pura Dalem Sejati">
             </div>
             <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
                 <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold mb-3">Piodalan Pura</h1>
