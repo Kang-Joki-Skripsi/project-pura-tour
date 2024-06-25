@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero": 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../img/hero.webp")',
+        "nistamandala": 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/nistamandala.webp")',
+        "madyamandala": 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/madya-mandala.webp")',
+        "utamamandala": 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/utama-mandala.webp")',
       },
       colors: {
         primary: '#9c4a29',
@@ -29,8 +32,8 @@ module.exports = {
           '100%': { transform: 'scale(1)', opacity: 1 },
         },
         scrollAnitmation: {
-          '0%': {transform: "translateY(-100%)"},
-          '100%': {transform: "translateY(0)"},
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
     },
