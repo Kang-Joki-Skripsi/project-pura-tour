@@ -16,7 +16,12 @@
               </button>
             </div>
         </div>
-
+        <div class="flex justify-center w-full py-16" id="loading">
+          <div class="flex items-center w-1/2 justify-center">
+            <div class="animate-spin w-5 h-5 rounded-full border-t-2 border-r-2 border-slate-700 mr-4"></div>
+            Load Data...
+          </div>
+        </div>
         <ul id="cards" class="py-8 grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-y-12 xl:gap-y-4"></ul>
     </div>
 
@@ -96,7 +101,7 @@
             cards.innerHTML = "";
 
             let dataGalery = await axios.get('api/galery');
-
+            document.querySelector("#loading").classList.add('hidden');
             dataPura.utama_mandala = dataGalery.data.utama_mandala;
             dataPura.madya_mandala = dataGalery.data.madya_mandala;
             dataPura.nista_mandala = dataGalery.data.nista_mandala;
